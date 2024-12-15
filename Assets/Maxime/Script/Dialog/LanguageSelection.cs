@@ -10,7 +10,7 @@ namespace Maxime.Script.Dialog
     {
         [SerializeField] private ScriptableObject mLanguages;
         [SerializeField] private DialogSentences dialogSentences;
-        [SerializeField] private Text dialogText; 
+        [SerializeField] private Text dialogText;
         [SerializeField] private Button frenchButton;
         [SerializeField] private Button englishButton;
         [SerializeField] private Button spanishButton;
@@ -18,10 +18,11 @@ namespace Maxime.Script.Dialog
 
         private void Start()
         {
-            frenchButton.onClick.AddListener(() => SetLanguage(Language.Francais));
-            englishButton.onClick.AddListener(() => SetLanguage(Language.English));
-            spanishButton.onClick.AddListener(() => SetLanguage(Language.Espagnol));
-
+            /*
+             frenchButton.onClick.AddListener(() => SetLanguage(Language.Francais));
+                 englishButton.onClick.AddListener(() => SetLanguage(Language.English));
+                 spanishButton.onClick.AddListener(() => SetLanguage(Language.Espagnol));
+            */
             // default language
             SetLanguage(Language.English);
         }

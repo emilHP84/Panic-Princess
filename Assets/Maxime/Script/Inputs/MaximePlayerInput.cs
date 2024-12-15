@@ -24,9 +24,15 @@ namespace Maxime.Script.Inputs
         private void PlayerInput_onJump(InputAction.CallbackContext ctx)
         {
             if (ctx.action.phase == InputActionPhase.Performed)
+            {
                 OnJump?.Invoke(this, new JumpEventArgs(true));
+                
+            }
             else if (ctx.action.phase == InputActionPhase.Canceled)
+            {
                 OnJump?.Invoke(this, new JumpEventArgs(false));
+            }
+            
         }
     }
 }
