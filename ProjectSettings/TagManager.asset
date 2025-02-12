@@ -8,22 +8,22 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - CAMERA
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - PLAYER
+  - PLAYER HITBOX
+  - PLAYER WEAPON
+  - ENEMY
+  - ENEMY HITBOX
+  - ENEMY WEAPON
+  - ALLY
+  - ALLY HITBOX
+  - ALLY WEAPON
+  - WALL
+  - DEBRIS
+  - DEBUG
+  - PLAYERTRIGGER
   - 
   - 
   - 
@@ -38,6 +38,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BACKGROUND
+    uniqueID: 1338538451
+    locked: 0
+  - name: BACK
+    uniqueID: 2606354333
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: FX
+    uniqueID: 3583703633
+    locked: 0
+  - name: FRONT
+    uniqueID: 1074709173
+    locked: 0
+  - name: UI
+    uniqueID: 3372860277
+    locked: 0
+  - name: UIFRONT
+    uniqueID: 2748356431
     locked: 0
