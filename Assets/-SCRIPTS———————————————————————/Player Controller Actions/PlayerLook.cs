@@ -12,7 +12,7 @@ public class PlayerLook : MonoBehaviour
     public Transform HorizontalPivot {get{return horizontalPivot;}}
     public Transform VerticalPivot {get{return verticalPivot;}}
     [SerializeField]Transform horizontalPivot,verticalPivot;
-    float xAngle,yAngle = 0;
+    float vAngle,hAngle = 0;
     Player player;
     float inputX,inputY;
     bool MouseInput
@@ -22,12 +22,14 @@ public class PlayerLook : MonoBehaviour
         else return false;
         }
     }
+    HealthScript health => GetComponent<HealthScript>();
 
     void Awake()
     {
         EVENTS.OnGameplay += EnableLook;
         EVENTS.OnGameplayExit += DisableLook;
         EVENTS.OnMouseSensitivityChange += ChangeMouseSensitivity;
+        health.OnSpawn += ResetLook;
     }
 
     void OnDestroy()
@@ -35,6 +37,7 @@ public class PlayerLook : MonoBehaviour
         EVENTS.OnGameplay -= EnableLook;
         EVENTS.OnGameplayExit -= DisableLook;
         EVENTS.OnMouseSensitivityChange -= ChangeMouseSensitivity;
+        health.OnSpawn -= ResetLook;
     }
 
 
@@ -47,6 +50,7 @@ public class PlayerLook : MonoBehaviour
 
     void EnableLook()
     {
+        GetAnglesFromPivots();
         CanLook = true;
     }
 
@@ -75,25 +79,36 @@ public class PlayerLook : MonoBehaviour
     {
         inputX = player.GetAxis("LookHorizontal") * lookSpeed.x;
         if (MouseInput) inputX *= mouseSensitivity.x;
-        xAngle +=inputX;
-        while (xAngle>360f) xAngle-=360f;
-        while (xAngle<-360f) xAngle -= 360f;
+        vAngle +=inputX;
+        while (vAngle>360f) vAngle-=360f;
+        while (vAngle<-360f) vAngle -= 360f;
     }
 
     void GetVerticalAngle()
     {
         inputY = -player.GetAxis("LookVertical") * lookSpeed.y;
         if (MouseInput) inputY *= mouseSensitivity.y;
-        yAngle += inputY;
-        yAngle = Mathf.Clamp(yAngle,-maxVerticalAngle,maxVerticalAngle);
+        hAngle += inputY;
+        hAngle = Mathf.Clamp(hAngle,-maxVerticalAngle,maxVerticalAngle);
     }
 
     void ApplyToCamera()
     {
-        horizontalPivot.localEulerAngles = Vector3.up * xAngle;
-        verticalPivot.localEulerAngles = Vector3.right * yAngle;
+        horizontalPivot.localEulerAngles = Vector3.up * vAngle;
+        verticalPivot.localEulerAngles = Vector3.right * hAngle;
     }
 
+    void GetAnglesFromPivots()
+    {
+        vAngle = horizontalPivot.localEulerAngles.y;
+        hAngle = verticalPivot.localEulerAngles.x;
+    }
+
+    void ResetLook()
+    {
+        vAngle = hAngle = 0;
+        horizontalPivot.localEulerAngles = verticalPivot.localEulerAngles = Vector3.zero;
+    }
 
 
 

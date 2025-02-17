@@ -169,6 +169,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixer: {fileID: 24300002, guid: b1058e5a676ce554cade7650a98a6d4d, type: 2}
+  oldPlaylist:
+    looping: 1
+    randomizeTracks: 0
+    timeScale: 0
+    fadeInDuration: 0
+    fadeOutDuration: 0
+    tracks:
+    - clipTitle: 
+      clip: {fileID: 0}
+      volume: 1
+  currentPlaylist:
+    looping: 1
+    randomizeTracks: 0
+    timeScale: 0
+    fadeInDuration: 0
+    fadeOutDuration: 0
+    tracks:
+    - clipTitle: 
+      clip: {fileID: 0}
+      volume: 1
 --- !u!1773428102 &2303634834154094801
 ParentConstraint:
   m_ObjectHideFlags: 0

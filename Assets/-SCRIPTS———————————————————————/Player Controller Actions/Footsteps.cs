@@ -14,11 +14,14 @@ public class Footsteps : MonoBehaviour
     [SerializeField][Range(0.1f,5f)]float stepSize = 0.5f;
     bool moving = false;
     float currentStepSize;
+    float normalVolume = 1f;
     
     void Start()
     {
         if (character==null) this.enabled = false;
         if (feetSounds.Length<1) this.enabled = false;
+        currentStepSize = stepSize;
+        normalVolume = source.volume;
     }
 
     void Update()
@@ -28,7 +31,7 @@ public class Footsteps : MonoBehaviour
             if (character.isGrounded) Landing(); else Air();
         }
 
-        if (grounded && distance>stepSize) PlayFootstep();   
+        if (grounded && distance>currentStepSize) PlayFootstep(normalVolume);   
     }
 
     void LateUpdate()
@@ -41,13 +44,13 @@ public class Footsteps : MonoBehaviour
         lastPosition = transform.position;
     }
 
-    void PlayFootstep()
+    void PlayFootstep(float volume)
     {
         distance = 0;
         lastStepPosition = transform.position;
         if (currentStepSize<stepSize) currentStepSize = stepSize;
         source.pitch = Random.Range(pitch.x, pitch.y);
-        source.PlayOneShot(feetSounds[Random.Range(0,feetSounds.Length)]);
+        source.PlayOneShot(feetSounds[Random.Range(0,feetSounds.Length)], volume);
     }
 
     void Air()
@@ -58,18 +61,18 @@ public class Footsteps : MonoBehaviour
     void Landing()
     {
         grounded = true;
-        PlayFootstep();
+        PlayFootstep(normalVolume);
     }
 
     void StartMoving()
     {
-        currentStepSize = stepSize * 0.3f;
+        currentStepSize = stepSize * 0.2f;
         moving = true;
     }
 
     void StopMoving()
     {
-        if (distance>stepSize*0.2f) PlayFootstep();
+        if (distance>stepSize*0.2f) PlayFootstep(normalVolume*0.8f);
         distance = 0;
         moving = false;
     }
