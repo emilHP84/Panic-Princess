@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,9 @@ public class SceneLoader : MonoBehaviour
     public static SceneLoader access;
     public bool IsLoading{get{return loading;}}
     bool loading = false;
+    public int CurrentScene{get{return loadedScene;}}
+    int loadedScene;
+    List<int> additiveScenes;
 
     void Awake()
     {
@@ -17,6 +21,8 @@ public class SceneLoader : MonoBehaviour
             return;
         }
         access = this;
+        loadedScene = SceneManager.GetActiveScene().buildIndex;
+        additiveScenes = new List<int>();
     }
 
 
@@ -68,7 +74,6 @@ public class SceneLoader : MonoBehaviour
 
 
 
-
     int GetScene(string sceneName)
     {
         return SceneManager.GetSceneByName(sceneName).buildIndex;
@@ -79,30 +84,30 @@ public class SceneLoader : MonoBehaviour
     {
         if (loading) { Debug.Log("Scene already loading!"); yield break; }
         loading = true;
-
+        // Start transition
         GAME.MANAGER.SwitchTo(State.waiting);
         if (delay>0) yield return new WaitForSecondsRealtime(delay);
-
+        Black.screen.Hide();
         if (fadeIn>0) Black.screen.IrisIn(fadeIn);
         while (Black.screen.IsWorking) yield return null;
-
         float timeBeforeLoad = Time.time;
+        // Loading scene...
         var asyncLoadLevel = SceneManager.LoadSceneAsync(index, additive ? LoadSceneMode.Additive : LoadSceneMode.Single);
-
+        if (additive) additiveScenes.Add(index); else loadedScene = index;
         while (!asyncLoadLevel.isDone) // Waiting for scene to be loaded
         {
             Debug.Log("Loading scene "+Mathf.FloorToInt(100*asyncLoadLevel.progress)+"%"); // Display percent loaded
             yield return null;
         }
-
+        // Scene is loaded
         EVENTS.InvokeSceneLoaded(index);
+        loading = false;
         float waitTimeRemaining = minWait-(Time.time-timeBeforeLoad);
         if (waitTimeRemaining>0) yield return new WaitForSecondsRealtime(waitTimeRemaining);
-        
         GAME.MANAGER.SwitchTo(State.gameplay);
         if (fadeOut>0) Black.screen.IrisOut(fadeOut);
         while (Black.screen.IsWorking) yield return null;
-        loading = false;
+        Black.screen.Hide();
     }
 
 } // SCRIPT END

@@ -4,9 +4,9 @@ using UnityEngine.UI;
 
 public class EVENTS
 {
-    static void LogEventInConsole(string eventName)
+    static void LogEventInConsole(string eventName) // Custom message to display in Unity Console when event is invoked
     {
-        Debug.Log("ℹ️ "+eventName+"");
+        Debug.Log("ℹ️ "+eventName);
     } 
 
     public static event Action OnInitialization;

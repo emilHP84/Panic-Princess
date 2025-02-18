@@ -77,7 +77,7 @@ public class MUSIC : MonoBehaviour
     public static MUSIC PLAYER;
     AudioSource[] players;
     int current = 0;
-    Coroutine fadeInRoutine, fadeOutRoutine;
+    Coroutine fadeInRoutine, fadeOutRoutine, playRoutine;
     [Header("MUSIC MIXER")]
     [SerializeField] AudioMixerGroup mixer;
     float speed = 1f;
@@ -145,7 +145,8 @@ public class MUSIC : MonoBehaviour
             players[current].clip = desired.clip;
             players[current].volume = desired.volume;
             players[current].Play();
-            StartCoroutine(PlayAndCheckTrackEnd());
+            if (playRoutine!=null) StopCoroutine(playRoutine);
+            playRoutine = StartCoroutine(PlayAndCheckTrackEnd());
             ApplyFinalMusicPitch();
             currentMusic = desired;
         }
@@ -178,7 +179,7 @@ public class MUSIC : MonoBehaviour
 
         if (fadeInRoutine!=null) StopCoroutine(fadeInRoutine);
         if (fadeOutRoutine!=null) StopCoroutine(fadeOutRoutine);
-        current = current<1 ? 1:0; // Swapping the AudioSources
+        current = current<1 ? 1:0; // Swapping the AudioSources to make the cross fade effect
         StartTrack(currentPlaylist.tracks[currentPlaylistIndex]);
         players[current].volume = 0;
         if (currentPlaylist!=null) fadeInRoutine = StartCoroutine(FadingPlayer(currentPlaylist.fadeInDuration, currentMusic.volume,players[current]));
@@ -205,7 +206,7 @@ public class MUSIC : MonoBehaviour
     IEnumerator PlayAndCheckTrackEnd()
     {
         paused = false;
-        while (players[current].isPlaying)
+        while (players[current].isPlaying || (Time.timeScale==0 &&currentPlaylist.timeScale!=TimeScale.Unscaled))
         {
             if(paused) yield break;
             yield return null;
@@ -224,24 +225,25 @@ public class MUSIC : MonoBehaviour
 
     void TrackEnded()
     {
-        if (currentPlaylist==null)
+        if (currentPlaylist==null) // If playlist was deleted during play
         {
-            return;
+            Stop(); // stop the music
+            return; // do not try to find what next track is
         }
         currentPlaylistIndex += 1;
-        if (currentPlaylist.tracks.Length>currentPlaylistIndex)
+        if (currentPlaylist.tracks.Length>currentPlaylistIndex) // If this was not the last track
         {
-            PlayMusic(currentPlaylist.tracks[currentPlaylistIndex]);
+            PlayMusic(currentPlaylist.tracks[currentPlaylistIndex]); // Play next track
         }
-        else if (currentPlaylist.looping)
+        else if (currentPlaylist.looping) // If this was the last track but playlist is in loop mode
         {
             currentPlaylistIndex = 0;
-            StartTrack(currentPlaylist.tracks[currentPlaylistIndex]);
+            StartTrack(currentPlaylist.tracks[currentPlaylistIndex]); // Play first track
         }
-        else
+        else // If this was the last track and playlist is not in loop mode
         {
             currentPlaylistIndex = 0;
-            Stop();
+            Stop(); // Stop the music
         }
     }
 

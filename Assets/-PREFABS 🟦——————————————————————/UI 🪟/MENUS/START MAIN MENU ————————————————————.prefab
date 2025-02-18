@@ -1448,6 +1448,12 @@ PrefabInstance:
         type: 3}
       propertyPath: playlist
       value: 
+      objectReference: {fileID: 11400000, guid: 7db154ead275bbd42b3aa0890ca6087a,
+        type: 2}
+    - target: {fileID: 2236740567450113024, guid: 4718fd3374358834fb027b3d71339589,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4908601220036635885, guid: 4718fd3374358834fb027b3d71339589,
         type: 3}

@@ -2,6 +2,46 @@ using UnityEngine;
 
 public class GAME: MonoBehaviour
 {
+
+// PUBLIC METHODS --------------------------------------------------------------------------------------------------
+
+    public void SwitchTo(State desiredState) // <-- CALL THIS TO CHANGE THE GAME STATE (with GAME.MANAGER.SwitchTo(desired))
+    {
+        SwitchTo(desiredState, -1f);
+    }
+
+    public void SwitchTo(State desiredState, float waitingTime) // <-- You can specify a waiting duration before entering the new state
+    {
+        nextState = desiredState;
+
+        if (waitingTime<0)
+        {
+            waitDuration = 0f;
+            waitTimer = 1f;
+            EnterState(desiredState);
+        }
+        else
+        {
+            waitDuration = waitingTime;
+            waitTimer = 0;
+            EnterState(State.waiting);
+        }
+    }
+
+    public void Pause() // <-- Call this to pause the game
+    {
+        if (CurrentState==State.gameplay) pauseScript.Pause();
+    }
+
+    public void Resume() // <-- Call this to resume the game from pause
+    {
+        if (CurrentState==State.paused) pauseScript.Resume();
+    }
+
+
+// -----------------------------------------------------------------------------------------------------------------
+
+
     // THIS IS THE STATE MACHINE THAT ONLY HANDLES THE CURRENT GAME STATE
     public static GAME MANAGER; // call from anywhere using: GAME.MANAGER
     public State CurrentState{get{return gameState;}}
@@ -46,30 +86,6 @@ public class GAME: MonoBehaviour
     void Update()
     {
         UpdateCurrentState();
-    }
-
-
-    public void SwitchTo(State desiredState) // <-- USE THIS TO CHANGE GAME STATE
-    {
-        SwitchTo(desiredState, -1f);
-    }
-
-    public void SwitchTo(State desiredState, float waitingTime) // <-- You can specify a waiting duration before entering the new state
-    {
-        nextState = desiredState;
-
-        if (waitingTime<0)
-        {
-            waitDuration = 0f;
-            waitTimer = 1f;
-            EnterState(desiredState);
-        }
-        else
-        {
-            waitDuration = waitingTime;
-            waitTimer = 0;
-            EnterState(State.waiting);
-        }
     }
 
 
@@ -154,18 +170,8 @@ public class GAME: MonoBehaviour
 
     void UpdateInWaiting()
     {
-        waitTimer += Time.unscaledDeltaTime;
+        waitTimer += Time.unscaledDeltaTime; // Optional timer in wait state
         if (waitTimer>waitDuration && nextState!=State.waiting) EnterState(nextState);
-    }
-
-    public void Pause()
-    {
-        if (CurrentState==State.gameplay) pauseScript.Pause();
-    }
-
-    public void Resume()
-    {
-        if (CurrentState==State.paused) pauseScript.Resume();
     }
 
 

@@ -163,6 +163,7 @@ public class MENU : MonoBehaviour
 
     public void BackToMainMenu()
     {
+        EVENTS.InvokeGameOver();
         MenusList(false);
         ClearMenuHistory();
         menuHistory.Insert(0,mainMenu);
@@ -179,17 +180,10 @@ public class MENU : MonoBehaviour
     IEnumerator NewGameRoutine()
     {
         MenusList(true);
-        GAME.MANAGER.SwitchTo(State.waiting);
-        Black.screen.Hide();
-        Black.screen.IrisIn(2f);
-        while (Black.screen.IsWorking) yield return null;
+        SceneLoader.access.LoadScene(SceneLoader.access.CurrentScene,2f,1f,1f,false,0);
+        while (SceneLoader.access.IsLoading) yield return null;
         MenusList(false);
-        yield return new WaitForSecondsRealtime(1f);
-        GAME.MANAGER.SwitchTo(State.gameplay);
         EVENTS.InvokeGameStart();
-        Black.screen.IrisOut(1f);
-        while (Black.screen.IsWorking) yield return null;
-        MenusList(false);
     }
     
 
