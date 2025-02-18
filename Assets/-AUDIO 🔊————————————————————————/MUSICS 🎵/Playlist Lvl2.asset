@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40ade8f64d82a7c4fb641157b75b125b, type: 3}
-  m_Name: Playlist SD
+  m_Name: Playlist Lvl2
   m_EditorClassIdentifier: 
   playlist:
     looping: 1
@@ -18,4 +18,7 @@ MonoBehaviour:
     timeScale: 0
     fadeInDuration: 5
     fadeOutDuration: 1
-    tracks: []
+    tracks:
+    - clipTitle: 'Proto ambiance lvl 2 '
+      clip: {fileID: 8300000, guid: ca47b14b82be76547bb103db2615b065, type: 3}
+      volume: 0
