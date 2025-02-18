@@ -513,6 +513,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 23772609469541669, guid: 23d56e67a282d5541830ce5a2583ead6,
+        type: 3}
+      propertyPath: scenePlaylist
+      value: 
+      objectReference: {fileID: 11400000, guid: ba21c1116d822d746bfcb62d9e473f4a,
+        type: 2}
     - target: {fileID: 2555121132212894410, guid: 23d56e67a282d5541830ce5a2583ead6,
         type: 3}
       propertyPath: m_Name
