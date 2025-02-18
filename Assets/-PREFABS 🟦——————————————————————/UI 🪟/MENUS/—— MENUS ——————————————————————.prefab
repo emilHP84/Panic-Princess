@@ -324,7 +324,7 @@ PrefabInstance:
     - target: {fileID: 733817399673472415, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
       propertyPath: m_fontSize
-      value: 20.95
+      value: 13.9
       objectReference: {fileID: 0}
     - target: {fileID: 798960958755871452, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
@@ -1254,7 +1254,7 @@ PrefabInstance:
     - target: {fileID: 5341119510121782779, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
       propertyPath: m_fontSize
-      value: 56.1
+      value: 53.9
       objectReference: {fileID: 0}
     - target: {fileID: 5341119510121782779, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
@@ -1409,12 +1409,12 @@ PrefabInstance:
     - target: {fileID: 5752872379496231493, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
       propertyPath: m_fontSize
-      value: 82.85
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 5861566205826470236, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
       propertyPath: m_fontSize
-      value: 25.05
+      value: 23.95
       objectReference: {fileID: 0}
     - target: {fileID: 5913189672697439039, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
@@ -2181,8 +2181,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 9216092366146811961, guid: 3d756fef224c8a84494fbead644a66a0, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 3041882246457172439, guid: 3d756fef224c8a84494fbead644a66a0, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d756fef224c8a84494fbead644a66a0, type: 3}
@@ -2918,12 +2920,12 @@ PrefabInstance:
     - target: {fileID: 335678825197292001, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
       propertyPath: m_fontSize
-      value: 44.3
+      value: 29.4
       objectReference: {fileID: 0}
     - target: {fileID: 1022848315653779217, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
       propertyPath: m_fontSize
-      value: 44.15
+      value: 29.25
       objectReference: {fileID: 0}
     - target: {fileID: 1022848315653779217, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
@@ -2958,7 +2960,7 @@ PrefabInstance:
     - target: {fileID: 2284166418528596086, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
       propertyPath: m_fontSize
-      value: 133.9
+      value: 87.25
       objectReference: {fileID: 0}
     - target: {fileID: 2599209753283813651, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
@@ -3128,13 +3130,25 @@ PrefabInstance:
     - target: {fileID: 5263592192056101485, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
       propertyPath: m_fontSize
-      value: 138.85
+      value: 92.2
       objectReference: {fileID: 0}
+    - target: {fileID: 5278704920699399815, guid: 6a2c42127b502764c96637af2e6c8cf3,
+        type: 3}
+      propertyPath: playlist
+      value: 
+      objectReference: {fileID: 11400000, guid: 7db154ead275bbd42b3aa0890ca6087a,
+        type: 2}
     - target: {fileID: 5350877380203164949, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
       propertyPath: m_Name
       value: "D\xC9MARRER Button Graphics"
       objectReference: {fileID: 0}
+    - target: {fileID: 6740604166723097139, guid: 6a2c42127b502764c96637af2e6c8cf3,
+        type: 3}
+      propertyPath: scenePlaylist
+      value: 
+      objectReference: {fileID: 11400000, guid: f58a44627f37dbe41bf2282080224d52,
+        type: 2}
     - target: {fileID: 7353084624605879514, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -3158,7 +3172,7 @@ PrefabInstance:
     - target: {fileID: 7663760246250361852, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
       propertyPath: m_fontSize
-      value: 17.8
+      value: 11.8
       objectReference: {fileID: 0}
     - target: {fileID: 8049264344074156745, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
@@ -3188,7 +3202,7 @@ PrefabInstance:
     - target: {fileID: 8134635786135445813, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
       propertyPath: m_fontSize
-      value: 29.1
+      value: 19.3
       objectReference: {fileID: 0}
     - target: {fileID: 8365325679448424683, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
@@ -3238,7 +3252,7 @@ PrefabInstance:
     - target: {fileID: 8667135380878544845, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
       propertyPath: m_fontSize
-      value: 29.75
+      value: 19.75
       objectReference: {fileID: 0}
     - target: {fileID: 8985889563869113875, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
@@ -3263,7 +3277,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4992172829265986240, guid: 6a2c42127b502764c96637af2e6c8cf3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4028556671805591893}
   m_SourcePrefab: {fileID: 100100000, guid: 6a2c42127b502764c96637af2e6c8cf3, type: 3}
 --- !u!224 &1469275306237887327 stripped
 RectTransform:
@@ -3271,6 +3289,25 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 3490805814223331916}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8445964374260572300 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4992172829265986240, guid: 6a2c42127b502764c96637af2e6c8cf3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3490805814223331916}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4028556671805591893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8445964374260572300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586f6a2c79d199a4e998c9709a5e645e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenePlaylist: {fileID: 11400000, guid: 7db154ead275bbd42b3aa0890ca6087a, type: 2}
 --- !u!1001 &7312386923394662123
 PrefabInstance:
   m_ObjectHideFlags: 0
