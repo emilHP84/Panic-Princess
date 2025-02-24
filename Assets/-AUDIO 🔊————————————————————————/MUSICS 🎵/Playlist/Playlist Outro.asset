@@ -19,6 +19,6 @@ MonoBehaviour:
     fadeInDuration: 5
     fadeOutDuration: 1
     tracks:
-    - clipTitle: MUSIC CINEMATIQUE FIN DE JEU
-      clip: {fileID: 8300000, guid: 28cbc3c20479d734f882d3f66eb131ce, type: 3}
+    - clipTitle: Ambiance + voix fin de jeu
+      clip: {fileID: 8300000, guid: 50300f17d35396e41a1fc62edd24393c, type: 3}
       volume: 0.5
