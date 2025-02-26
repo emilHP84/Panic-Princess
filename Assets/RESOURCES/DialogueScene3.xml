@@ -1,0 +1,31 @@
+<Dialogues>
+	<Dialogue>
+		<TimeCode>0</TimeCode><!-- incrémenter de 1 a chaque fois -->
+		<PersoID>2</PersoID><!-- Perso ID ne peut avoir que 1 (valentin) ou 2(elianna) -->
+		<Duration>9</Duration><!-- correspond au temps de la voix en seconde -->
+		<TextFr>Valentin , et si la Rose ne pouvait pas me sauver… et si elle ne faisait qu’ajouter un poids à ton cœur ?</TextFr><!-- bah le texte en Français -->
+		<TextEn>Valentin , what if the Rose couldn't save me... what if it just added a weight to your heart?</TextEn><!-- bah le texte en Anglais -->
+	</Dialogue>
+
+	<Dialogue>
+		<TimeCode>10</TimeCode><!-- incrémenter de 1 a chaque fois -->
+		<PersoID>1</PersoID><!-- Perso ID ne peut avoir que 1 (valentin) ou 2(elianna) -->
+		<Duration>12</Duration><!-- correspond au temps de la voix en seconde -->
+		<TextFr> Alors je porterai ce poids avec joie.</TextFr><!-- bah le texte en Français -->
+		<TextEn>  Then I'll carry this weight with joy.</TextEn><!-- bah le texte en Anglais -->
+	</Dialogue>
+
+	<Dialogue>
+		<TimeCode>15</TimeCode>
+		<!-- incrémenter de 1 a chaque fois -->
+		<PersoID>1</PersoID>
+		<!-- Perso ID ne peut avoir que 1 (valentin) ou 2(elianna) -->
+		<Duration>17</Duration>
+		<!-- correspond au temps de la voix en seconde -->
+		<TextFr>Et si c’est le dernier, il sera à toi.</TextFr>
+		<!-- bah le texte en Français -->
+		<TextEn>And if it's the last one, it's yours.</TextEn>
+		<!-- bah le texte en Anglais -->
+	</Dialogue>
+	
+	

@@ -1,18 +1,95 @@
 <Dialogues>
 	<Dialogue>
 		<TimeCode>0</TimeCode><!-- incrémenter de 1 a chaque fois -->
-		<PersoID>1</PersoID><!-- Perso ID ne peut avoir que 1 (valentin) ou 2(elianna) -->
-		<Duration>1</Duration><!-- correspond au temps de la voix en seconde -->
-		<TextFr>Bonjour, comment allez-vous ?</TextFr><!-- bah le texte en Français -->
-		<TextEn>Hello, how are you ?</TextEn><!-- bah le texte en Anglais -->
+		<PersoID>2</PersoID><!-- Perso ID ne peut avoir que 1 (valentin) ou 2(elianna) -->
+		<Duration>3</Duration><!-- correspond au temps de la voix en seconde -->
+		<TextFr>Valentin… Je sens mon cœur s’affaiblir.</TextFr><!-- bah le texte en Français -->
+		<TextEn>Valentin... I feel my heart weakening.</TextEn><!-- bah le texte en Anglais -->
 	</Dialogue>
 
 	<Dialogue>
-		<TimeCode>6</TimeCode><!-- incrémenter de 1 a chaque fois -->
+		<TimeCode>4</TimeCode><!-- incrémenter de 1 a chaque fois -->
 		<PersoID>2</PersoID><!-- Perso ID ne peut avoir que 1 (valentin) ou 2(elianna) -->
-		<Duration>2</Duration><!-- correspond au temps de la voix en seconde -->
-		<TextFr>je vais bien merci!</TextFr><!-- bah le texte en Français -->
-		<TextEn>Fine and you ?</TextEn><!-- bah le texte en Anglais -->
+		<Duration>6</Duration><!-- correspond au temps de la voix en seconde -->
+		<TextFr>Chaque battement est plus lourd que le précédent.</TextFr><!-- bah le texte en Français -->
+		<TextEn>Each beat is heavier than the last.</TextEn><!-- bah le texte en Anglais -->
+	</Dialogue>
+
+	<Dialogue>
+		<TimeCode>7</TimeCode>
+		<!-- incrémenter de 1 a chaque fois -->
+		<PersoID>2</PersoID>
+		<!-- Perso ID ne peut avoir que 1 (valentin) ou 2(elianna) -->
+		<Duration>13</Duration>
+		<!-- correspond au temps de la voix en seconde -->
+		<TextFr>Peut-être que… Peut-être que ce périple est une mauvaise idée,  nous devrions rester au village. »</TextFr>
+		<!-- bah le texte en Français -->
+		<TextEn>Maybe... maybe this trip is a bad idea, we should stay in the village.”</TextEn>
+		<!-- bah le texte en Anglais -->
+	</Dialogue>
+
+	<Dialogue>
+		<TimeCode>14</TimeCode>
+		<!-- incrémenter de 1 a chaque fois -->
+		<PersoID>1</PersoID>
+		<!-- Perso ID ne peut avoir que 1 (valentin) ou 2(elianna) -->
+		<Duration>15</Duration>
+		<!-- correspond au temps de la voix en seconde -->
+		<TextFr> JAMAIS! Tu es mon souffle, Elianna.</TextFr>
+		<!-- bah le texte en Français -->
+		<TextEn> NEVER! You are my breath, Elianna.</TextEn>
+		<!-- bah le texte en Anglais -->
 	</Dialogue>
 	
-</Dialogues>
+	<Dialogue>
+		<TimeCode>14</TimeCode>
+		<!-- incrémenter de 1 a chaque fois -->
+		<PersoID>1</PersoID>
+		<!-- Perso ID ne peut avoir que 1 (valentin) ou 2(elianna) -->
+		<Duration>15</Duration>
+		<!-- correspond au temps de la voix en seconde -->
+		<TextFr> JAMAIS! Tu es mon souffle, Elianna.</TextFr>
+		<!-- bah le texte en Français -->
+		<TextEn> NEVER! You are my breath, Elianna.</TextEn>
+		<!-- bah le texte en Anglais -->
+	</Dialogue>
+
+	<Dialogue>
+		<TimeCode>16</TimeCode>
+		<!-- incrémenter de 1 a chaque fois -->
+		<PersoID>1</PersoID>
+		<!-- Perso ID ne peut avoir que 1 (valentin) ou 2(elianna) -->
+		<Duration>18</Duration>
+		<!-- correspond au temps de la voix en seconde -->
+		<TextFr> Sans toi, je ne suis qu’une coquille vide.</TextFr>
+		<!-- bah le texte en Français -->
+		<TextEn> Without you, I'm just an empty shell.</TextEn>
+		<!-- bah le texte en Anglais -->
+	</Dialogue>
+	
+	<Dialogue>
+		<TimeCode>19</TimeCode>
+		<!-- incrémenter de 1 a chaque fois -->
+		<PersoID>1</PersoID>
+		<!-- Perso ID ne peut avoir que 1 (valentin) ou 2(elianna) -->
+		<Duration>21</Duration>
+		<!-- correspond au temps de la voix en seconde -->
+		<TextFr> Nous trouverons la rose, Je te le promets.</TextFr>
+		<!-- bah le texte en Français -->
+		<TextEn> We'll find the rose, I promise.</TextEn>
+		<!-- bah le texte en Anglais -->
+	</Dialogue>
+
+	<Dialogue>
+		<TimeCode>22 </TimeCode>
+		<!-- incrémenter de 1 a chaque fois -->
+		<PersoID>1</PersoID>
+		<!-- Perso ID ne peut avoir que 1 (valentin) ou 2(elianna) -->
+		<Duration>24 </Duration>
+		<!-- correspond au temps de la voix en seconde -->
+		<TextFr> Mais pour cela, tu dois continuer. Donne-moi ta main.</TextFr>
+		<!-- bah le texte en Français -->
+		<TextEn>But to do that, you have to keep going. Give me your hand.</TextEn>
+		<!-- bah le texte en Anglais -->
+	</Dialogue>
+	 
