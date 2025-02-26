@@ -1,0 +1,16 @@
+<Dialogues>
+	<Dialogue>
+		<ID>1</ID> <!-- incrémenter de 1 a chaque fois -->
+		<Delay>10</Delay><!-- correspond au temps de la voix en seconde -->
+		<PersoID>1</PersoID> <!-- Perso ID ne peut avoir que 1 (valentin) ou 2(elianna) -->
+		<TextFr>Bonjour, comment allez-vous ?</TextFr> <!-- bah le texte en Français -->
+		<TextEn>Hello, how are you ?</TextEn> <!-- bah le texte en Anglais -->
+	</Dialogue>
+	<Dialogue>
+		<ID>2</ID>
+		<Delay>15</Delay>
+		<PersoID>2</PersoID>
+		<TextFr>Je vais bien, merci !</TextFr>
+		<TextEn>I'm fine, thank you !</TextEn>
+	</Dialogue>
+</Dialogues>
