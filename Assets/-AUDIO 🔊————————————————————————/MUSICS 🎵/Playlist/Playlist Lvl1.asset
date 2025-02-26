@@ -21,4 +21,4 @@ MonoBehaviour:
     tracks:
     - clipTitle: 'Ambiance Lvl 1 '
       clip: {fileID: 8300000, guid: 82123dc6fb0df8c459fcb2cad3e11185, type: 3}
-      volume: 0
+      volume: 0.5

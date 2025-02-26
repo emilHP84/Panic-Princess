@@ -21,4 +21,4 @@ MonoBehaviour:
     tracks:
     - clipTitle: 
       clip: {fileID: 0}
-      volume: 0
+      volume: 0.5

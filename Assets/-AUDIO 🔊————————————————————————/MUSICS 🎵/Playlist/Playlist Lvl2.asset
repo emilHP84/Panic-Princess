@@ -21,4 +21,4 @@ MonoBehaviour:
     tracks:
     - clipTitle: 'Proto ambiance lvl 2 '
       clip: {fileID: 8300000, guid: ca47b14b82be76547bb103db2615b065, type: 3}
-      volume: 0
+      volume: 0.5
