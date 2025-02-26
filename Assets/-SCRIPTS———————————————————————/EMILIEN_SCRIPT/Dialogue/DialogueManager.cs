@@ -13,6 +13,12 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI m_dialogueBox;
     List<Dialogue> dialoguesList = new List<Dialogue>();
     Dialogue currentDialogue;
+    int index;
+    float currentTime;
+    float currentSilenceTime;
+
+    bool isDialoguePlaying;
+    bool isSilenceWaiting;
 
     private void OnEnable()
     {
@@ -44,36 +50,48 @@ public class DialogueManager : MonoBehaviour
         }
 
         EVENTS.OnGameplay += SelectDialogue;
+        index = 0;
+        currentTime = 0;
+        currentSilenceTime = 0;
+        isSilenceWaiting = false;
+        isDialoguePlaying = false;
     }
 
     private void SelectDialogue()
     {
-        StartDialogue(1);
+        StartDialogue();
         EVENTS.OnGameplay -= SelectDialogue;
     }
 
-    private void StartDialogue(int dialogueID)
+    private void StartDialogue()
     {
-        currentDialogue = dialoguesList.FirstOrDefault(x => x.ID == dialogueID);
-        if(currentDialogue != null)
-        {
-            StartCoroutine(NextDialogue(currentDialogue.Delay));
-            StartCoroutine(ShowText());
+        if (index >= dialoguesList.Count || dialoguesList.Count <= 0) 
+        { 
+            currentDialogue = null;
+            return;
         }
+
+        currentDialogue = dialoguesList[index];
+        
+    }
+    void DialogueFinish()
+    {
+        isDialoguePlaying = false;
+        NextDialogue();
+        currentSilenceTime = 0;
+        isSilenceWaiting = true;
     }
 
-    IEnumerator NextDialogue(int delay)
+    void NextDialogue()
     {
-
-        yield return new WaitForSeconds(delay);
-        StartDialogue(currentDialogue.ID + 1);
-
+        Debug.Log("Changement dialogue");
+        index++;
+        StartDialogue();
     }
 
-    IEnumerator ShowText()
+    void ShowText(string text)
     {
-        yield return null;
-        m_dialogueBox.text = currentDialogue.TextFr;
+        m_dialogueBox.text = text;
     }
 
     private void ReadXML(int dialogueID)
@@ -111,7 +129,24 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-
+        
+        currentTime += Time.deltaTime;
+        if (currentDialogue != null && currentTime >= currentDialogue.TimeCode && !isDialoguePlaying)
+        {
+            Debug.Log("en train de jouer le dialogue");
+            ShowText(LanguageManager.currentLang == SystemLanguage.French ? currentDialogue.TextFr : currentDialogue.TextEn);
+            isDialoguePlaying = true;
+            Invoke("DialogueFinish", currentDialogue.Duration);
+        }
+        if (!isDialoguePlaying && isSilenceWaiting)
+        {
+            currentSilenceTime += Time.deltaTime;
+            if(currentSilenceTime >= 3)
+            {
+                ShowText(string.Empty);
+                isSilenceWaiting = false;
+            }
+        }
     }
     private void OnDisable()
     {
