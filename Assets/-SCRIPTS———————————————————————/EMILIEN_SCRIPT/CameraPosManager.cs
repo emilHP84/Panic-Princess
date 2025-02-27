@@ -17,7 +17,7 @@ public class CameraPosManager : MonoBehaviour
 
     private void Start()
     {
-        camPos.transform.position = transform.position;
+        //camPos.transform.position = transform.position;
     }
 
     public void ActualizeCameraPos(bool wantToFollow)
