@@ -330,6 +330,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1065558041365748393, guid: 991056e200f796543acffcdf2a270300,
+        type: 3}
+      propertyPath: SizeModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065558041365748393, guid: 991056e200f796543acffcdf2a270300,
+        type: 3}
+      propertyPath: ClampVelocityModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065558041365748393, guid: 991056e200f796543acffcdf2a270300,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065558041365748393, guid: 991056e200f796543acffcdf2a270300,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065558041365748393, guid: 991056e200f796543acffcdf2a270300,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065558041365748393, guid: 991056e200f796543acffcdf2a270300,
+        type: 3}
+      propertyPath: InitialModule.startSize.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065558041365748393, guid: 991056e200f796543acffcdf2a270300,
+        type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065558041365748393, guid: 991056e200f796543acffcdf2a270300,
+        type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7850836766827467820, guid: 991056e200f796543acffcdf2a270300,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -380,6 +420,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8258832195986877288, guid: 991056e200f796543acffcdf2a270300,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 8258832195986877288, guid: 991056e200f796543acffcdf2a270300,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258832195986877288, guid: 991056e200f796543acffcdf2a270300,
+        type: 3}
+      propertyPath: m_NormalDirection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258832195986877288, guid: 991056e200f796543acffcdf2a270300,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 9019736879895221142, guid: 991056e200f796543acffcdf2a270300,
         type: 3}
       propertyPath: m_Name
