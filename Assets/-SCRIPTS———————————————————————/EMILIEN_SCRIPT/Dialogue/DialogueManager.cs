@@ -47,6 +47,9 @@ public class DialogueManager : MonoBehaviour
             case 3:
                 ReadXML(3);
                 break;
+            case 4:
+                ReadXML(4);
+                break;
         }
 
         EVENTS.OnGameplay += SelectDialogue;
@@ -59,7 +62,9 @@ public class DialogueManager : MonoBehaviour
 
     private void SelectDialogue()
     {
+        Debug.Log($"AGHHHHHHHHHHHHHHHHHHHH");
         StartDialogue();
+
         EVENTS.OnGameplay -= SelectDialogue;
     }
 
@@ -70,9 +75,9 @@ public class DialogueManager : MonoBehaviour
             currentDialogue = null;
             return;
         }
+        Debug.Log($"début dialogue :{dialoguesList[index]} ");
 
         currentDialogue = dialoguesList[index];
-        
     }
     void DialogueFinish()
     {
@@ -129,14 +134,13 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        
         currentTime += Time.deltaTime;
         if (currentDialogue != null && currentTime >= currentDialogue.TimeCode && !isDialoguePlaying)
         {
             Debug.Log("en train de jouer le dialogue");
             ShowText(LanguageManager.currentLang == SystemLanguage.French ? currentDialogue.TextFr : currentDialogue.TextEn);
             isDialoguePlaying = true;
-            Invoke("DialogueFinish", currentDialogue.Duration);
+            Invoke("DialogueFinish", currentDialogue.Duration - currentDialogue.TimeCode);
         }
         if (!isDialoguePlaying && isSilenceWaiting)
         {

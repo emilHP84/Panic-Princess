@@ -7,6 +7,7 @@ public class EndLevel : MonoBehaviour
     public int level;
     private void OnTriggerEnter(Collider other)
     {
-        SceneLoader.access.LoadScene(level, 1, 1, 1, false, 3);
+        Debug.Log("hellllllllllo toto");
+        SceneLoader.access.LoadScene(level, 1, 1, 1, false, 2);
     }
 }

@@ -160,7 +160,7 @@ public class MUSIC : MonoBehaviour
             FadeOutToSilence();
             return;
         }
-        Debug.Log("🎵 PLAYLIST "+newPlaylist.name);
+        Debug.Log("🎵 PLAYLIST "+newPlaylist.name + " gameobject:" + gameObject.name);
         Playlist tempPlist = newPlaylist.playlist;
         if (tempPlist.randomizeTracks)
         {

@@ -30,7 +30,10 @@ namespace Scripted
 
         private void Update()
         {
-
+            if(GAME.MANAGER.CurrentState != State.gameplay)
+            {
+                return;
+            }
             if (move != null)
             {
                 move.MovingOnValue(new Vector3(1,0,0));
