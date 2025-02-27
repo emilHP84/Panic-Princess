@@ -1,0 +1,32 @@
+<Dialogues>
+	<Dialogue>
+		<TimeCode>0</TimeCode><!-- incrémenter de 1 a chaque fois -->
+		<PersoID>2</PersoID><!-- Perso ID ne peut avoir que 1 (valentin) ou 2(elianna) -->
+		<Duration>8</Duration><!-- correspond au temps de la voix en seconde -->
+		<TextFr>Non, Valentin… Je ne peux pas… Je… Je t’aime.</TextFr><!-- bah le texte en Français -->
+		<TextEn>No, Valentin... I can't... I... I love you.</TextEn><!-- bah le texte en Anglais -->
+	</Dialogue>
+
+	<Dialogue>
+		<TimeCode>10</TimeCode><!-- incrémenter de 1 a chaque fois -->
+		<PersoID>1</PersoID><!-- Perso ID ne peut avoir que 1 (valentin) ou 2(elianna) -->
+		<Duration>12</Duration><!-- correspond au temps de la voix en seconde -->
+		<TextFr> Je t’aime aussi. Pour toujours.</TextFr><!-- bah le texte en Français -->
+		<TextEn> I love you too. I love you forever.</TextEn><!-- bah le texte en Anglais -->
+	</Dialogue>
+
+	<Dialogue>
+		<TimeCode>16</TimeCode>
+		<!-- incrémenter de 1 a chaque fois -->
+		<PersoID>1</PersoID>
+		<!-- Perso ID ne peut avoir que 1 (valentin) ou 2(elianna) -->
+		<Duration>17</Duration>
+		<!-- correspond au temps de la voix en seconde -->
+		<TextFr>Tu es mon étoile, Valentin , et mon existence ne brille qu’à la lueur de ton amour éternel.</TextFr>
+		<!-- bah le texte en Français -->
+		<TextEn>You are my star, Valentin, and my existence shines only in the light of your eternal love.</TextEn>
+		<!-- bah le texte en Anglais -->
+	</Dialogue>
+</Dialogues>
+	
+	

@@ -19,6 +19,6 @@ MonoBehaviour:
     fadeInDuration: 5
     fadeOutDuration: 1
     tracks:
-    - clipTitle: 'Ambiance Lvl 1 '
-      clip: {fileID: 8300000, guid: 82123dc6fb0df8c459fcb2cad3e11185, type: 3}
+    - clipTitle: Ambiance + voix lvl1
+      clip: {fileID: 8300000, guid: fdd2fa775647896489b9485eb686c57c, type: 3}
       volume: 0.5

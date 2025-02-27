@@ -7,6 +7,7 @@ public class MusicSwitcher : MonoBehaviour
     void OnEnable()
     {
         MUSIC.PLAYER.SetPlaylist(playlist);
+        Debug.Log(gameObject.name + " lol");
     }
 
 

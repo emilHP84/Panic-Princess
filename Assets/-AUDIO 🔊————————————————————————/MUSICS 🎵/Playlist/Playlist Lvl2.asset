@@ -19,6 +19,6 @@ MonoBehaviour:
     fadeInDuration: 5
     fadeOutDuration: 1
     tracks:
-    - clipTitle: 'Proto ambiance lvl 2 '
-      clip: {fileID: 8300000, guid: ca47b14b82be76547bb103db2615b065, type: 3}
+    - clipTitle: 'Ambiance + voix lvl 2 '
+      clip: {fileID: 8300000, guid: 6a0738f2df1bff74bbc4944f64e51eb2, type: 3}
       volume: 0.5
