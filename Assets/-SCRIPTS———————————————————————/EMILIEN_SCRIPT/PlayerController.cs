@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Scripted
@@ -11,6 +13,7 @@ namespace Scripted
         private float jumpStartTime;
         [SerializeField] private float jumpDuration = 1f;
         private Vector3 initialPosition;
+        [SerializeField] private List<ParticleSystem> vfxTrails = new List<ParticleSystem>();
 
         private void OnEnable()
         {
@@ -62,6 +65,7 @@ namespace Scripted
                 jumpStartTime = Time.time;
                 initialPosition = transform.position;
                 jump.StartJumping();
+                SetVFX(false);
             }
 
             Vector3 newPosition = transform.position;
@@ -76,6 +80,23 @@ namespace Scripted
                 {
                     isJumping = false;
                     jump.EndJumping();
+                    SetVFX(true);
+
+                }
+            }
+        }
+
+        void SetVFX(bool isActive)
+        {
+            for (int i = 0; i >= vfxTrails.Count ;  i++)
+            {
+                if (isActive == true)
+                {
+                    vfxTrails[i].Play();
+                }
+                if(isActive == false)
+                {
+                    vfxTrails[i].Stop();
                 }
             }
         }
