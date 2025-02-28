@@ -16,7 +16,7 @@ MonoBehaviour:
     looping: 1
     randomizeTracks: 0
     timeScale: 0
-    fadeInDuration: 5
+    fadeInDuration: 0.5
     fadeOutDuration: 1
     tracks:
     - clipTitle: 
