@@ -104,7 +104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6908251846850545725
 Transform:
   m_ObjectHideFlags: 0
@@ -201,7 +201,7 @@ Transform:
   m_GameObject: {fileID: 4971175128505012343}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.92, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -442,25 +442,34 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 5.9870114
-      outSlope: 5.9870114
+      inSlope: 4.5525107
+      outSlope: 4.5525107
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.03452511
+      outWeight: 0.08097166
     - serializedVersion: 3
-      time: 0.998291
-      value: -0.0026245117
-      inSlope: -11.303371
-      outSlope: -11.303371
+      time: 0.50117457
+      value: 0.9970397
+      inSlope: 0.0012193918
+      outSlope: 0.0012193918
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.0058898926
+      inSlope: -3.7369766
+      outSlope: -3.7369766
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.043346096
+      inWeight: 0.08477898
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  jumpHeight: 2
+  jumpHeight: 2.5
 --- !u!114 &7192039684487883479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,7 +559,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.126, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6536085113486677111}
@@ -598,15 +607,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 7e76a93b8b9526b49b5b8babee8dd4ac, type: 3}
+  m_Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 37.375, y: 53.25}
+  m_Size: {x: 4.859375, y: 3.859375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &2349109445239765919
@@ -622,11 +631,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  fps: 3
-  playOnAwake: 0
+  - {fileID: 21300000, guid: 7e76a93b8b9526b49b5b8babee8dd4ac, type: 3}
+  - {fileID: 21300000, guid: e2b2f1ef9b5e8e342a29d10296985750, type: 3}
+  - {fileID: 21300000, guid: 3efcb0b51ce0c374a9f64d330dc48c1c, type: 3}
+  - {fileID: 21300000, guid: 73d265df2267e8548aad301965c771d3, type: 3}
+  - {fileID: 21300000, guid: 9b70a8bfbd035c5468e3bc5dc450e73e, type: 3}
+  - {fileID: 21300000, guid: 887ee4a729c170b419db768907bf0256, type: 3}
+  - {fileID: 21300000, guid: a774f3f6a120842429fcd765c2b772cb, type: 3}
+  - {fileID: 21300000, guid: 0d64e3bc2a1232847b676c810dd77c32, type: 3}
+  - {fileID: 21300000, guid: 73b78279967aef346904165df128592c, type: 3}
+  fps: 20
+  playOnAwake: 1
   loopType: 1
   onlyRunsInGameplayState: 1
   ignoreTimeScale: 0
