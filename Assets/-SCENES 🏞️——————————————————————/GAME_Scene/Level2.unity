@@ -245,8 +245,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 170, y: 10, z: 11}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 167.51709, y: 10, z: 11}
+  m_Center: {x: -1.2414551, y: 0, z: 0}
 --- !u!114 &119718858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +275,7 @@ PrefabInstance:
     - target: {fileID: 4210961915673613873, guid: 72f07ed203562254a9fada503b5a3104,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -243.77
+      value: -39.13
       objectReference: {fileID: 0}
     - target: {fileID: 4210961915673613873, guid: 72f07ed203562254a9fada503b5a3104,
         type: 3}
@@ -608,7 +608,7 @@ PrefabInstance:
     - target: {fileID: 2905817448770900475, guid: bc7fa45fa4a77df43b63a8c1d556c668,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.48
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2905817448770900475, guid: bc7fa45fa4a77df43b63a8c1d556c668,
         type: 3}
@@ -665,6 +665,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8679923077489957414, guid: bc7fa45fa4a77df43b63a8c1d556c668,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.47
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -697,7 +702,7 @@ Transform:
   m_GameObject: {fileID: 1043503316}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 132.6, y: 0.2, z: 0}
+  m_LocalPosition: {x: 130.55, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -736,7 +741,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bcd3f0f41a61d541a7a34601ae7a5e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 2
+  level: 3
+  time: 1
 --- !u!1001 &1119808928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1038,7 +1044,7 @@ PrefabInstance:
     - target: {fileID: 4592266496864340348, guid: 1bfd7c48363a3634face07db1506c911,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.48
       objectReference: {fileID: 0}
     - target: {fileID: 4592266496864340348, guid: 1bfd7c48363a3634face07db1506c911,
         type: 3}
@@ -1646,8 +1652,8 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 981493040}
   - {fileID: 1427686220}
   - {fileID: 77904958}
   - {fileID: 779773209}
-  - {fileID: 981493040}
   - {fileID: 1550678503}

@@ -1,0 +1,9 @@
+# ninja log v5
+94	1667	7624149761073849	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	d7cce40a71fa1ca
+58	1707	7624149760923807	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	df29821be724c7
+113	1770	7624149762334120	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	a17549506c4a9190
+1	1784	7624149762244094	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	448a4b4d3b6f1bbb
+20	1887	7624149763714739	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	ddaa585c3c3025b8
+28	2081	7624149765725713	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	480d3123857e6fb6
+12	2246	7624149767431301	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	43d55be4a6135006
+2247	2470	7624149769148205	C:/Users/ehp84/Desktop/LocalChange/Panic-Princess/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3f3f6v3x/obj/arm64-v8a/libgame.so	d2a6c0914984e53f

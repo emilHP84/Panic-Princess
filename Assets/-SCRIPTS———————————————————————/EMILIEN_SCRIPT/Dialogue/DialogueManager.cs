@@ -134,6 +134,8 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
+        if (GAME.MANAGER.CurrentState == State.menu) { return; }
+
         currentTime += Time.deltaTime;
         if (currentDialogue != null && currentTime >= currentDialogue.TimeCode && !isDialoguePlaying)
         {
