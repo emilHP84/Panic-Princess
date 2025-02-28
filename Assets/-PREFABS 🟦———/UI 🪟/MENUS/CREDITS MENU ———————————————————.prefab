@@ -451,7 +451,7 @@ PrefabInstance:
     - target: {fileID: 9196120756759110954, guid: c0d5f3ae3944a104aabb0f1c8addf6c7,
         type: 3}
       propertyPath: m_text
-      value: UNITY PROJECT TEMPLATE BY <B><color=yellow>KARL FAYETON</B>
+      value: TEMPLATE DE PROJET UNITY PAR <B><color=yellow>KARL FAYETON</B>
       objectReference: {fileID: 0}
     - target: {fileID: 9196120756759110954, guid: c0d5f3ae3944a104aabb0f1c8addf6c7,
         type: 3}
@@ -547,7 +547,7 @@ PrefabInstance:
     - target: {fileID: 1713239819919326938, guid: e6006960ee25fdd4e8769b5b3e136c89,
         type: 3}
       propertyPath: m_text
-      value: CREDITS
+      value: "CR\xC9DITS"
       objectReference: {fileID: 0}
     - target: {fileID: 3200991497944840525, guid: e6006960ee25fdd4e8769b5b3e136c89,
         type: 3}
@@ -818,6 +818,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3617863588324229793, guid: 88eca5155246b5d4eb78bbb2945e2e23,
+        type: 3}
+      propertyPath: m_text
+      value: "\nCl\xE9ment MENDOZA\nFlorie BERNARD"
+      objectReference: {fileID: 0}
     - target: {fileID: 3979285946527005486, guid: 88eca5155246b5d4eb78bbb2945e2e23,
         type: 3}
       propertyPath: en
@@ -957,6 +962,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6672351510880459955, guid: 88eca5155246b5d4eb78bbb2945e2e23,
+        type: 3}
+      propertyPath: m_text
+      value: "\n\n\nTous les Valentin et les Valentine pr\xEAts \xE0 se sacrifier
+        pour ceux qu'ils aiment."
       objectReference: {fileID: 0}
     - target: {fileID: 6754383883046875793, guid: 88eca5155246b5d4eb78bbb2945e2e23,
         type: 3}
