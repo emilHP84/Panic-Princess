@@ -310,6 +310,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7496331545141567652, guid: 8f42ef88a38298f479b6590f07e9a696,
+        type: 3}
+      propertyPath: m_text
+      value: "\xC9milien HUGLY PLACE"
+      objectReference: {fileID: 0}
     - target: {fileID: 8424873407836795358, guid: 8f42ef88a38298f479b6590f07e9a696,
         type: 3}
       propertyPath: m_Name
@@ -504,10 +509,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7496331545141567652, guid: 8f42ef88a38298f479b6590f07e9a696,
+        type: 3}
+      propertyPath: m_text
+      value: "\n\nTous les Valentin et les Valentine pr\xEAts \xE0 se sacrifier pour
+        ceux qu'ils aiment."
+      objectReference: {fileID: 0}
     - target: {fileID: 8424873407836795358, guid: 8f42ef88a38298f479b6590f07e9a696,
         type: 3}
       propertyPath: m_Name
       value: THANKS
+      objectReference: {fileID: 0}
+    - target: {fileID: 8424873407836795358, guid: 8f42ef88a38298f479b6590f07e9a696,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8441009793505654227, guid: 8f42ef88a38298f479b6590f07e9a696,
         type: 3}
@@ -697,6 +713,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496331545141567652, guid: 8f42ef88a38298f479b6590f07e9a696,
+        type: 3}
+      propertyPath: m_text
+      value: Jordan ALCALA
       objectReference: {fileID: 0}
     - target: {fileID: 8424873407836795358, guid: 8f42ef88a38298f479b6590f07e9a696,
         type: 3}
@@ -892,6 +913,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7496331545141567652, guid: 8f42ef88a38298f479b6590f07e9a696,
+        type: 3}
+      propertyPath: m_text
+      value: La Saint Valentin
+      objectReference: {fileID: 0}
     - target: {fileID: 8424873407836795358, guid: 8f42ef88a38298f479b6590f07e9a696,
         type: 3}
       propertyPath: m_Name
@@ -1086,6 +1112,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7496331545141567652, guid: 8f42ef88a38298f479b6590f07e9a696,
+        type: 3}
+      propertyPath: m_text
+      value: "Cl\xE9ment MENDOZA\nFlorie BERNARD"
+      objectReference: {fileID: 0}
     - target: {fileID: 8424873407836795358, guid: 8f42ef88a38298f479b6590f07e9a696,
         type: 3}
       propertyPath: m_Name
@@ -1279,6 +1310,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496331545141567652, guid: 8f42ef88a38298f479b6590f07e9a696,
+        type: 3}
+      propertyPath: m_text
+      value: "Toute l'\xC9quipe"
       objectReference: {fileID: 0}
     - target: {fileID: 8424873407836795358, guid: 8f42ef88a38298f479b6590f07e9a696,
         type: 3}
