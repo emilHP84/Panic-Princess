@@ -14,6 +14,12 @@ namespace Scripted
 
         private void OnEnable()
         {
+            EVENTS.OnJump += Jumping;
+        }
+
+        private void OnDisable()
+        {
+            EVENTS.OnJump -= Jumping;
 
         }
 
@@ -26,6 +32,17 @@ namespace Scripted
         {
             move = GetComponent<Move>();
             jump = GetComponent<Jump>();
+        }
+
+        private void Jumping() 
+        {
+            if (!isJumping)
+            {
+                isJumping = true;
+                jumpStartTime = Time.time;
+                initialPosition = transform.position;
+                jump.StartJumping();
+            }
         }
 
         private void Update()

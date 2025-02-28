@@ -94,4 +94,7 @@ public class EVENTS
 
     public static event Action<bool> OnCameraFollow;
     public static void InvokeOnCameraFollow(bool isActive) { OnCameraFollow?.Invoke(isActive); }
+
+    public static event Action OnJump;
+    public static void InvokeJump() { OnJump?.Invoke(); }
 } // SCRIPT END
