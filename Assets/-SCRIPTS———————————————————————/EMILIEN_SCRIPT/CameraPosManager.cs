@@ -8,6 +8,7 @@ public class CameraPosManager : MonoBehaviour
 {
     [SerializeField] private GameObject camPos;
     float offsetX;
+    float Ypos;
 
     private bool m_enabled;
     private void OnEnable()
@@ -18,6 +19,7 @@ public class CameraPosManager : MonoBehaviour
     private void Start()
     {
         //camPos.transform.position = transform.position;
+        Ypos = transform.position.y;
     }
 
     public void ActualizeCameraPos(bool wantToFollow)
@@ -30,7 +32,7 @@ public class CameraPosManager : MonoBehaviour
     {
         if (m_enabled == true)
         {
-            camPos.transform.position = transform.position + Vector3.right * offsetX;
+            camPos.transform.position = new Vector3(transform.position.x + offsetX, Ypos, transform.position.z);
         }
         else
         {
