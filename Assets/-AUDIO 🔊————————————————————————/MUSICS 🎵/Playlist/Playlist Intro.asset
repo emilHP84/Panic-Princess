@@ -19,6 +19,6 @@ MonoBehaviour:
     fadeInDuration: 0.5
     fadeOutDuration: 1
     tracks:
-    - clipTitle: 
-      clip: {fileID: 0}
+    - clipTitle: MUSIC INTRO
+      clip: {fileID: 8300000, guid: acce0f2f4fbe74b4f8294556a4a06f39, type: 3}
       volume: 0.5
