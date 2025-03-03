@@ -9,16 +9,17 @@ public class Jump : MonoBehaviour
 
     public void StartJumping()
     {
+
     }
 
-    public void DuringJumping(float startJumpingTime, float jumpDuration, Vector3 initialPosition)
+    public void DuringJumping(float startJumpingTime, float jumpDuration)
     {
         float elapsedTime = Time.time - startJumpingTime;
         float normalizedTime = elapsedTime / jumpDuration;
         float curveValue = jumpCurve.Evaluate(normalizedTime);
 
         Vector3 newPosition = transform.position;
-        newPosition.y = initialPosition.y + (curveValue * jumpHeight);
+        newPosition.y =  curveValue * jumpHeight;
 
         transform.position = newPosition;
     }

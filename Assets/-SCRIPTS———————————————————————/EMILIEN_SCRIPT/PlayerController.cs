@@ -12,7 +12,6 @@ namespace Scripted
         [SerializeField]private bool isJumping = false;
         private float jumpStartTime;
         [SerializeField] private float jumpDuration = 1f;
-        private Vector3 initialPosition;
         [SerializeField] private List<ParticleSystem> vfxTrails = new List<ParticleSystem>();
 
         private void OnEnable()
@@ -43,7 +42,6 @@ namespace Scripted
             {
                 isJumping = true;
                 jumpStartTime = Time.time;
-                initialPosition = transform.position;
                 jump.StartJumping();
             }
         }
@@ -63,7 +61,6 @@ namespace Scripted
             {
                 isJumping = true;
                 jumpStartTime = Time.time;
-                initialPosition = transform.position;
                 jump.StartJumping();
                 SetVFX(false);
             }
@@ -74,7 +71,7 @@ namespace Scripted
             {
                 if (Time.time - jumpStartTime < jumpDuration)
                 {
-                    jump.DuringJumping(jumpStartTime,jumpDuration, initialPosition);
+                    jump.DuringJumping(jumpStartTime,jumpDuration);
                 }
                 else
                 {

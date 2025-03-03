@@ -4,8 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(CameraShake))]
 public class CameraPosManager : MonoBehaviour
 {
+    private CameraShake cameraShake;
+
     [SerializeField] private GameObject camPos;
     float offsetX;
     float Ypos;
@@ -14,11 +17,12 @@ public class CameraPosManager : MonoBehaviour
     private void OnEnable()
     {
         EVENTS.OnCameraFollow += ActualizeCameraPos;
+        EVENTS.OnHited += CameraShake;
     }
 
     private void Start()
     {
-        //camPos.transform.position = transform.position;
+        cameraShake = GetComponent<CameraShake>();
         Ypos = transform.position.y;
     }
 
@@ -40,9 +44,14 @@ public class CameraPosManager : MonoBehaviour
         }
     }
 
+    private void CameraShake()
+    {
+        cameraShake.Shaking();
+    }
+
     private void OnDisable()
     {
         EVENTS.OnCameraFollow -= ActualizeCameraPos;
-
+        EVENTS.OnHited -= CameraShake;
     }
 }
