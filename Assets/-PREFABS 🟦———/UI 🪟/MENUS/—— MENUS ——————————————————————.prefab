@@ -323,6 +323,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 733817399673472415, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
+      propertyPath: m_text
+      value: RETOUR
+      objectReference: {fileID: 0}
+    - target: {fileID: 733817399673472415, guid: 3d756fef224c8a84494fbead644a66a0,
+        type: 3}
       propertyPath: m_fontSize
       value: 14.5
       objectReference: {fileID: 0}
@@ -575,6 +580,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614048846145700734, guid: 3d756fef224c8a84494fbead644a66a0,
+        type: 3}
+      propertyPath: m_text
+      value: "SENSIBILIT\xC9 SOURIS"
       objectReference: {fileID: 0}
     - target: {fileID: 1699346000404068119, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
@@ -961,6 +971,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3622709235823157783, guid: 3d756fef224c8a84494fbead644a66a0,
+        type: 3}
+      propertyPath: m_Name
+      value: "FRAN\xC7AIS Button Graphics"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740975634090392531, guid: 3d756fef224c8a84494fbead644a66a0,
+        type: 3}
+      propertyPath: m_text
+      value: MUSIQUE
+      objectReference: {fileID: 0}
     - target: {fileID: 3786002380343244086, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -986,6 +1006,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4009162567075453952, guid: 3d756fef224c8a84494fbead644a66a0,
+        type: 3}
+      propertyPath: m_text
+      value: ANGLAIS
+      objectReference: {fileID: 0}
     - target: {fileID: 4061063898709205698, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
       propertyPath: m_fontSize
@@ -1005,6 +1030,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145149745181036386, guid: 3d756fef224c8a84494fbead644a66a0,
+        type: 3}
+      propertyPath: m_text
+      value: VOIX
       objectReference: {fileID: 0}
     - target: {fileID: 4292779919505766065, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
@@ -1100,6 +1130,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492058979636111779, guid: 3d756fef224c8a84494fbead644a66a0,
+        type: 3}
+      propertyPath: m_text
+      value: "G\xC9N\xC9RAL"
       objectReference: {fileID: 0}
     - target: {fileID: 4492058979636111779, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
@@ -1253,6 +1288,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5341119510121782779, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
+      propertyPath: m_text
+      value: "CONTR\xD4LES"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341119510121782779, guid: 3d756fef224c8a84494fbead644a66a0,
+        type: 3}
       propertyPath: m_fontSize
       value: 56.1
       objectReference: {fileID: 0}
@@ -1280,6 +1320,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427561849927082341, guid: 3d756fef224c8a84494fbead644a66a0,
+        type: 3}
+      propertyPath: m_text
+      value: SONS INTERFACE
       objectReference: {fileID: 0}
     - target: {fileID: 5427561849927082341, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
@@ -1346,6 +1391,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5637904911009955486, guid: 3d756fef224c8a84494fbead644a66a0,
+        type: 3}
+      propertyPath: m_text
+      value: LANGUE
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646610917048262555, guid: 3d756fef224c8a84494fbead644a66a0,
+        type: 3}
+      propertyPath: m_Name
+      value: RETOUR Button Graphics
+      objectReference: {fileID: 0}
     - target: {fileID: 5661914482034825771, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
       propertyPath: m_Navigation.m_SelectOnDown
@@ -1408,8 +1463,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5752872379496231493, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
+      propertyPath: m_text
+      value: "PARAM\xC8TRES"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752872379496231493, guid: 3d756fef224c8a84494fbead644a66a0,
+        type: 3}
       propertyPath: m_fontSize
       value: 57.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5861566205826470236, guid: 3d756fef224c8a84494fbead644a66a0,
+        type: 3}
+      propertyPath: m_text
+      value: "R\xC9GLAGES PAR D\xC9FAUT"
       objectReference: {fileID: 0}
     - target: {fileID: 5861566205826470236, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
@@ -2008,6 +2073,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8221667209632337759, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
+      propertyPath: m_text
+      value: EFFETS SONORES
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221667209632337759, guid: 3d756fef224c8a84494fbead644a66a0,
+        type: 3}
       propertyPath: m_fontSize
       value: 35.6
       objectReference: {fileID: 0}
@@ -2025,6 +2095,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8345356623763179012, guid: 3d756fef224c8a84494fbead644a66a0,
+        type: 3}
+      propertyPath: m_Name
+      value: ANGLAIS Button Graphics
+      objectReference: {fileID: 0}
+    - target: {fileID: 8351688320260317174, guid: 3d756fef224c8a84494fbead644a66a0,
+        type: 3}
+      propertyPath: m_text
+      value: "VOLUME G\xC9N\xC9RAL"
       objectReference: {fileID: 0}
     - target: {fileID: 8351688320260317174, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
@@ -2075,6 +2155,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8517911512852789267, guid: 3d756fef224c8a84494fbead644a66a0,
+        type: 3}
+      propertyPath: m_text
+      value: "FRAN\xC7AIS"
       objectReference: {fileID: 0}
     - target: {fileID: 8596496580482720109, guid: 3d756fef224c8a84494fbead644a66a0,
         type: 3}
@@ -2315,6 +2400,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1720157294236823443, guid: 0a7fcfde4c88ad148b31ed3aac0886c1,
         type: 3}
+      propertyPath: m_text
+      value: RETOUR
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720157294236823443, guid: 0a7fcfde4c88ad148b31ed3aac0886c1,
+        type: 3}
       propertyPath: m_fontSize
       value: 14.5
       objectReference: {fileID: 0}
@@ -2478,6 +2568,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3026594365805932385, guid: 0a7fcfde4c88ad148b31ed3aac0886c1,
+        type: 3}
+      propertyPath: m_text
+      value: GRAPHISMES
+      objectReference: {fileID: 0}
     - target: {fileID: 3363032930585600327, guid: 0a7fcfde4c88ad148b31ed3aac0886c1,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -2628,6 +2723,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4948699600979456371, guid: 0a7fcfde4c88ad148b31ed3aac0886c1,
+        type: 3}
+      propertyPath: m_text
+      value: REMERCIEMENTS
+      objectReference: {fileID: 0}
     - target: {fileID: 5205514028717066608, guid: 0a7fcfde4c88ad148b31ed3aac0886c1,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -2652,6 +2752,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303951715319620274, guid: 0a7fcfde4c88ad148b31ed3aac0886c1,
+        type: 3}
+      propertyPath: m_text
+      value: "CR\xC9DITS"
       objectReference: {fileID: 0}
     - target: {fileID: 5303951715319620274, guid: 0a7fcfde4c88ad148b31ed3aac0886c1,
         type: 3}
@@ -2687,6 +2792,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518818597512611670, guid: 0a7fcfde4c88ad148b31ed3aac0886c1,
+        type: 3}
+      propertyPath: m_text
+      value: SON
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029467011724129687, guid: 0a7fcfde4c88ad148b31ed3aac0886c1,
+        type: 3}
+      propertyPath: m_Name
+      value: RETOUR Button Graphics
       objectReference: {fileID: 0}
     - target: {fileID: 6174050102564066479, guid: 0a7fcfde4c88ad148b31ed3aac0886c1,
         type: 3}
@@ -2742,6 +2857,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7115658350113705945, guid: 0a7fcfde4c88ad148b31ed3aac0886c1,
+        type: 3}
+      propertyPath: m_text
+      value: TEMPLATE DE PROJET UNITY PAR <B><color=yellow>KARL FAYETON</B>
       objectReference: {fileID: 0}
     - target: {fileID: 7115658350113705945, guid: 0a7fcfde4c88ad148b31ed3aac0886c1,
         type: 3}
@@ -2979,6 +3099,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 335678825197292001, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
+      propertyPath: m_text
+      value: "D\xC9MARRER"
+      objectReference: {fileID: 0}
+    - target: {fileID: 335678825197292001, guid: 6a2c42127b502764c96637af2e6c8cf3,
+        type: 3}
       propertyPath: m_fontSize
       value: 30.65
       objectReference: {fileID: 0}
@@ -2996,6 +3121,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.r
       value: 0.8679245
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022848315653779217, guid: 6a2c42127b502764c96637af2e6c8cf3,
+        type: 3}
+      propertyPath: m_text
+      value: "D\xC9MARRER"
       objectReference: {fileID: 0}
     - target: {fileID: 1022848315653779217, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
@@ -3256,6 +3386,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7663760246250361852, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
+      propertyPath: m_text
+      value: "PARAM\xC8TRES"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7663760246250361852, guid: 6a2c42127b502764c96637af2e6c8cf3,
+        type: 3}
       propertyPath: m_fontSize
       value: 12.3
       objectReference: {fileID: 0}
@@ -3283,6 +3418,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134635786135445813, guid: 6a2c42127b502764c96637af2e6c8cf3,
+        type: 3}
+      propertyPath: m_text
+      value: QUITTER
       objectReference: {fileID: 0}
     - target: {fileID: 8134635786135445813, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
@@ -3333,6 +3473,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667135380878544845, guid: 6a2c42127b502764c96637af2e6c8cf3,
+        type: 3}
+      propertyPath: m_text
+      value: "CR\xC9DITS"
       objectReference: {fileID: 0}
     - target: {fileID: 8667135380878544845, guid: 6a2c42127b502764c96637af2e6c8cf3,
         type: 3}
