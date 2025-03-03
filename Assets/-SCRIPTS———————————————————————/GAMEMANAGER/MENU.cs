@@ -150,7 +150,11 @@ public class MENU : MonoBehaviour
         EnableAllMenus();
         HideAllMenus();
         menuHistory.Insert(0,mainMenu);
-        StartCoroutine(TransitionToMenu(TransitionType.Iris,mainMenu,0,1f,2f));
+        if (TransitionRoutine != null)
+        {
+            StopCoroutine(TransitionRoutine);
+        }
+        TransitionRoutine = StartCoroutine(TransitionToMenu(TransitionType.Iris,mainMenu,0,1f,2f));
         CancelInvoke();
         Invoke("DisableMainMenuAnimations",2f);
     }
@@ -167,7 +171,11 @@ public class MENU : MonoBehaviour
         MenusList(false);
         ClearMenuHistory();
         menuHistory.Insert(0,mainMenu);
-        StartCoroutine(TransitionToMenu(TransitionType.Iris,mainMenu,1f,1f,2f));
+        if (TransitionRoutine != null)
+        {
+            StopCoroutine(TransitionRoutine);
+        }
+        TransitionRoutine = StartCoroutine(TransitionToMenu(TransitionType.Iris,mainMenu,1f,1f,2f));
     }
 
 
@@ -313,7 +321,11 @@ public class MENU : MonoBehaviour
         GameObject desiredMenu = menuHistory[1];
         Debug.Log("Previous menu > "+desiredMenu.name+"    From "+menuHistory[0].name);
         menuHistory.RemoveAt(0);
-        StartCoroutine(TransitionToMenu(TransitionType.Fade,desiredMenu,fadeInDuration,blackDuration,fadeOutDuration));
+        if (TransitionRoutine != null)
+        {
+            StopCoroutine(TransitionRoutine);
+        }
+        TransitionRoutine = StartCoroutine(TransitionToMenu(TransitionType.Fade,desiredMenu,fadeInDuration,blackDuration,fadeOutDuration));
     }
 
 
@@ -321,7 +333,12 @@ public class MENU : MonoBehaviour
     void ShowNextMenu(GameObject desiredMenu, float fadeInDuration, float blackDuration, float fadeOutDuration)
     {
         menuHistory.Insert(0,desiredMenu);
-        StartCoroutine(TransitionToMenu(TransitionType.Fade,desiredMenu,fadeInDuration,blackDuration,fadeOutDuration));
+        if(TransitionRoutine != null)
+        {
+            StopCoroutine(TransitionRoutine);
+        }
+        TransitionRoutine = 
+            StartCoroutine(TransitionToMenu(TransitionType.Fade,desiredMenu,fadeInDuration,blackDuration,fadeOutDuration));
     }
 
 
@@ -332,10 +349,11 @@ public class MENU : MonoBehaviour
     }
 
 
-
+    Coroutine TransitionRoutine;
 
     IEnumerator TransitionToMenu(TransitionType transition, GameObject desiredMenu, float fadeInDuration, float blackDuration, float fadeOutDuration)
     {
+        Debug.Log("transition to menu");
         Unselect();
         Black.screen.OpenIris();
         Black.screen.Hide();

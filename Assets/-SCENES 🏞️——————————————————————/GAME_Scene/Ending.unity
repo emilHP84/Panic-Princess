@@ -225,51 +225,6 @@ Transform:
   - {fileID: 1382364133}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &822570900
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 822570902}
-  - component: {fileID: 822570901}
-  m_Layer: 0
-  m_Name: ' '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &822570901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 822570900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6e9051399ca15144a25e4ffeb1d5aff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeBeforeQuit: 25
---- !u!4 &822570902
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 822570900}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8753076, y: -0.14944187, z: -2.109469}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1100278033
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,8 +384,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1880115624}
-  - component: {fileID: 1880115626}
   - component: {fileID: 1880115625}
+  - component: {fileID: 1880115626}
   m_Layer: 0
   m_Name: endLevel
   m_TagString: Untagged
@@ -483,10 +438,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1880115623}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bcd3f0f41a61d541a7a34601ae7a5e3, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ce51b2df03c08044acd202d9078ecf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 0
   time: 24
 --- !u!1001 &1960250130
 PrefabInstance:
@@ -579,4 +533,3 @@ SceneRoots:
   - {fileID: 1100278035}
   - {fileID: 589107506}
   - {fileID: 689016001}
-  - {fileID: 822570902}

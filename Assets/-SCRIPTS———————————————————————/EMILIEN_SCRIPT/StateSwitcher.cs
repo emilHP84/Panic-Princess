@@ -5,12 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class StateSwitcher : MonoBehaviour
 {
+    [SerializeField] float time;
+
     private void Start()
     {
-        if(SceneManager.GetActiveScene().buildIndex == 0)
+        Invoke("MainMenu", time);
+    }
+
+    void MainMenu()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 4)
         {
-            GAME.MANAGER.SwitchTo(State.menu);
             MENU.SCRIPT.BackToMainMenu();
+
         }
     }
 }
