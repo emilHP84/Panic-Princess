@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40ade8f64d82a7c4fb641157b75b125b, type: 3}
+  m_Name: Playlist Warrior
+  m_EditorClassIdentifier: 
+  playlist:
+    looping: 0
+    randomizeTracks: 1
+    timeScale: 0
+    fadeInDuration: 0
+    fadeOutDuration: 0
+    tracks:
+    - clipTitle: Warrior-001
+      clip: {fileID: 8300000, guid: 648a7b05011015449b7d7f367f513d76, type: 3}
+      volume: 0
+    - clipTitle: Warrior-002
+      clip: {fileID: 8300000, guid: 34f03a0522adaf84c81b8ef116a8122e, type: 3}
+      volume: 0
+    - clipTitle: Warrior-003
+      clip: {fileID: 8300000, guid: d46bc1c38da9cd240a3e8ceeb26e6004, type: 3}
+      volume: 0
+    - clipTitle: Warrior-004
+      clip: {fileID: 8300000, guid: 39736918a61e66041943316524890589, type: 3}
+      volume: 0
+    - clipTitle: Warrior-005
+      clip: {fileID: 8300000, guid: 46286bad40e8a0e4b88ab46bb842affb, type: 3}
+      volume: 0
+    - clipTitle: Warrior-006
+      clip: {fileID: 8300000, guid: 89ab4a0e1456c3d4890d1c3c0cb102d8, type: 3}
+      volume: 0
+    - clipTitle: Warrior-007
+      clip: {fileID: 8300000, guid: 868fbfe78f62c5c429b4758137b7c75a, type: 3}
+      volume: 0
