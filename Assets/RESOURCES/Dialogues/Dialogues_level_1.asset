@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 292b1194f196a254fb55ab0ab10a3bb9, type: 3}
   m_Name: Dialogues_level_1
   m_EditorClassIdentifier: 
-  Dialogues: []
+  Dialogues:
+  - {fileID: 11400000, guid: 326b067b4f6f8ba438d54d135f70d029, type: 2}
+  - {fileID: 11400000, guid: d030ead35d08a7f49b1ff5dee2923411, type: 2}
+  - {fileID: 11400000, guid: 1c43dd1732cc0ae4097efc4affda0a18, type: 2}
+  - {fileID: 11400000, guid: 1e6b89f4dc8013f4fbf4acb4be71ae55, type: 2}
+  - {fileID: 11400000, guid: fc49c03e1cf74af488d3576971ee7cc0, type: 2}
+  - {fileID: 11400000, guid: d895877aa07602745805c422de9e6279, type: 2}
+  - {fileID: 11400000, guid: 742e5876ac12ccd46a51824456446008, type: 2}
