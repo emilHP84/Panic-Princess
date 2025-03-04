@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using System.Xml.Serialization;
+using UnityEngine;
 
-[XmlRoot("Dialogues")]
-public class DialogueList
+[CreateAssetMenu(fileName = "Dialogues_level_", menuName = "ScriptableObjects/Dialogues/Dialogues Level", order = 0)]
+
+public class DialogueList : ScriptableObject
 {
-    [XmlElement("Dialogue")]
-    public List<Dialogue> Dialogues { get; set; }
+    public List<Dialogue> Dialogues;
 }

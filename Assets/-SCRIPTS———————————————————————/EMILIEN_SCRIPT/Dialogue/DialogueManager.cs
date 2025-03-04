@@ -1,18 +1,13 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Xml.Serialization;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI m_dialogueBox;
     List<Dialogue> dialoguesList = new List<Dialogue>();
     Dialogue currentDialogue;
+    [SerializeField] AudioSource audioSource;
     int index;
     float currentTime;
     float currentSilenceTime;
@@ -20,17 +15,10 @@ public class DialogueManager : MonoBehaviour
     bool isDialoguePlaying;
     bool isSilenceWaiting;
 
-    private void OnEnable()
-    {
-
-    }
-
-    private void Awake()
-    {
-    }
     private void Start()
     {
         EVENTS.OnSceneLoaded += SwitchDialogueScene;
+        audioSource.loop = false;
     }
 
     private void SwitchDialogueScene(int Scene)
@@ -39,16 +27,16 @@ public class DialogueManager : MonoBehaviour
         switch (Scene)
         {
             case 1:
-                ReadXML(1);
+                SetDialogueList(1);
                 break;
             case 2:
-                ReadXML(2);
+                SetDialogueList(2);
                 break;
             case 3:
-                ReadXML(3);
+                SetDialogueList(3);
                 break;
             case 4:
-                ReadXML(4);
+                SetDialogueList(4);
                 break;
         }
 
@@ -62,7 +50,6 @@ public class DialogueManager : MonoBehaviour
 
     private void SelectDialogue()
     {
-        Debug.Log($"AGHHHHHHHHHHHHHHHHHHHH");
         StartDialogue();
 
         EVENTS.OnGameplay -= SelectDialogue;
@@ -99,7 +86,7 @@ public class DialogueManager : MonoBehaviour
         m_dialogueBox.text = text;
     }
 
-    private void ReadXML(int dialogueID)
+    private void SetDialogueList(int dialogueID)
     {
         DialogueList dialogues = LoadDialoguesFromResources(dialogueID);
 
@@ -107,27 +94,19 @@ public class DialogueManager : MonoBehaviour
         {
             dialoguesList = dialogues.Dialogues;
         }
-        else
-        {
-            Debug.LogError("Impossible de charger le fichier XML.");
-        }
     }
 
     private DialogueList LoadDialoguesFromResources(int dialogueID)
     {
-        TextAsset xmlFile = Resources.Load<TextAsset>($"DialogueScene{dialogueID}");
+        DialogueList dialogues = Resources.Load<DialogueList>($"Dialogues/Dialogues_level_{dialogueID}");
 
-        if (xmlFile != null)
+        if (dialogues != null && dialogues.Dialogues != null && dialogues.Dialogues.Count > 0)
         {
-            XmlSerializer serializer = new XmlSerializer(typeof(DialogueList));
-            using (System.IO.StringReader reader = new System.IO.StringReader(xmlFile.text))
-            {
-                return (DialogueList)serializer.Deserialize(reader);
-            }
+            return dialogues;
         }
         else
         {
-            Debug.LogError("Fichier XML introuvable dans Resources.");
+            Debug.LogError("Dialogue introuvable.");
             return null;
         }
     }
@@ -137,12 +116,13 @@ public class DialogueManager : MonoBehaviour
         if (GAME.MANAGER.CurrentState == State.menu) { return; }
 
         currentTime += Time.deltaTime;
-        if (currentDialogue != null && currentTime >= currentDialogue.TimeCode && !isDialoguePlaying)
+        if (currentDialogue != null && currentTime >= currentDialogue.StartTimeCode && !isDialoguePlaying)
         {
             Debug.Log("en train de jouer le dialogue");
+            LaunchAudio();
             ShowText(LanguageManager.currentLang == SystemLanguage.French ? currentDialogue.TextFr : currentDialogue.TextEn);
             isDialoguePlaying = true;
-            Invoke("DialogueFinish", currentDialogue.Duration - currentDialogue.TimeCode);
+            Invoke("DialogueFinish", currentDialogue.EndTimeCode - currentDialogue.StartTimeCode);
         }
         if (!isDialoguePlaying && isSilenceWaiting)
         {
@@ -154,6 +134,13 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
+
+    private void LaunchAudio()
+    {
+        audioSource.clip = currentDialogue.Voice;
+        audioSource.Play();
+    }
+
     private void OnDisable()
     {
 
