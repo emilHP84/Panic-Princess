@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 663d53fe223c70844893ab6534649192, type: 3}
-  m_Name: Dialogue_ 2
+  m_Name: Dialogue_ 5 _lvl1
   m_EditorClassIdentifier: 
-  StartTimeCode: 4
-  PersoID: 2
-  EndTimeCode: 2.153
-  Voice: {fileID: 8300000, guid: 33808e182522045498e5e9656a74de79, type: 3}
-  TextFr: "Chaque battement est plus lourd que le pr\xE9c\xE9dent."
-  TextEn: Each beat is heavier than the last.
+  StartTimeCode: 16
+  PersoID: 1
+  EndTimeCode: 2.159
+  Voice: {fileID: 8300000, guid: 858d5906fcaf9e241839a804c6a87a82, type: 3}
+  TextFr: "Sans toi, je ne suis qu\u2019une coquille vide."
+  TextEn: Without you, I'm just an empty shell
