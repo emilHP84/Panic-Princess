@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 663d53fe223c70844893ab6534649192, type: 3}
-  m_Name: Dialogue_ 7 _lvl1
+  m_Name: Dialogue_ 1 _lvl2
   m_EditorClassIdentifier: 
-  StartTimeCode: 21
-  PersoID: 1
-  Duration: 4.943
-  Voice: {fileID: 8300000, guid: 9580da12323e6514297d86806d7a2aa7, type: 3}
-  TextFr: Mais pour cela, tu dois continuer. Donne-moi ta main.
-  TextEn: But to do that, you have to keep going. Give me your hand.
+  StartTimeCode: 0
+  PersoID: 2
+  Duration: 6.812
+  Voice: {fileID: 8300000, guid: ab02d2869978cf842b704377223341ad, type: 3}
+  TextFr: "Cette for\xEAt\u2026 Elle chante. Les arbres murmurent nos souvenirs."
+  TextEn: This forest... It sings. The trees whisper our memories.
