@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663d53fe223c70844893ab6534649192, type: 3}
   m_Name: Dialogue_ 3
   m_EditorClassIdentifier: 
-  TimeCode: 0
-  PersoID: 0
-  Duration: 0
-  Voice: {fileID: 0}
-  TextFr: 
-  TextEn: 
+  StartTimeCode: 7
+  PersoID: 2
+  EndTimeCode: 6.075
+  Voice: {fileID: 8300000, guid: 3889cc8b8e78a9647aaf9b4370d99e17, type: 3}
+  TextFr: "Peut-\xEAtre que\u2026 Peut-\xEAtre que ce p\xE9riple est une mauvaise
+    id\xE9e,  nous devrions rester au village."
+  TextEn: Maybe... maybe this trip is a bad idea, we should stay in the village.
