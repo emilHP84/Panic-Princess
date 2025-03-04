@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663d53fe223c70844893ab6534649192, type: 3}
   m_Name: Dialogue_ 4
   m_EditorClassIdentifier: 
-  TimeCode: 0
-  PersoID: 0
-  Duration: 0
-  Voice: {fileID: 0}
-  TextFr: 
-  TextEn: 
+  StartTimeCode: 13
+  PersoID: 1
+  EndTimeCode: 2.535
+  Voice: {fileID: 8300000, guid: e1d09b0dd066db3459a1cf6df8b9d62e, type: 3}
+  TextFr: JAMAIS! Tu es mon souffle, Elianna.
+  TextEn: NEVER! You are my breath, Elianna.

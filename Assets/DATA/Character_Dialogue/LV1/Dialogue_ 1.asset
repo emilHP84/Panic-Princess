@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartTimeCode: 0
   PersoID: 2
-  EndTimeCode: 0
-  Voice: {fileID: 8300000, guid: 18af96c54de6c794bb29b8b4801930c8, type: 3}
+  EndTimeCode: 3.49
+  Voice: {fileID: 8300000, guid: e81486fa9d15a3d448284efa0dfb5650, type: 3}
   TextFr: "Valentin\u2026 Je sens mon c\u0153ur s\u2019affaiblir."
   TextEn: Valentin... I feel my heart weakening.

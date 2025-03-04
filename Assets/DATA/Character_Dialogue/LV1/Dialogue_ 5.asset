@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663d53fe223c70844893ab6534649192, type: 3}
   m_Name: Dialogue_ 5
   m_EditorClassIdentifier: 
-  TimeCode: 0
-  PersoID: 0
-  Duration: 0
-  Voice: {fileID: 0}
-  TextFr: 
-  TextEn: 
+  StartTimeCode: 16
+  PersoID: 1
+  EndTimeCode: 2.159
+  Voice: {fileID: 8300000, guid: 858d5906fcaf9e241839a804c6a87a82, type: 3}
+  TextFr: "Sans toi, je ne suis qu\u2019une coquille vide."
+  TextEn: Without you, I'm just an empty shell

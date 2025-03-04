@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663d53fe223c70844893ab6534649192, type: 3}
   m_Name: Dialogue_ 7
   m_EditorClassIdentifier: 
-  TimeCode: 0
-  PersoID: 0
-  Duration: 0
-  Voice: {fileID: 0}
-  TextFr: 
-  TextEn: 
+  StartTimeCode: 21
+  PersoID: 1
+  EndTimeCode: 4.943
+  Voice: {fileID: 8300000, guid: 9580da12323e6514297d86806d7a2aa7, type: 3}
+  TextFr: Mais pour cela, tu dois continuer. Donne-moi ta main.
+  TextEn: But to do that, you have to keep going. Give me your hand.

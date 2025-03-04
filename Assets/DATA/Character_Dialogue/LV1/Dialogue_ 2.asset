@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663d53fe223c70844893ab6534649192, type: 3}
   m_Name: Dialogue_ 2
   m_EditorClassIdentifier: 
-  TimeCode: 0
-  PersoID: 0
-  Duration: 0
-  Voice: {fileID: 0}
-  TextFr: 
-  TextEn: 
+  StartTimeCode: 4
+  PersoID: 2
+  EndTimeCode: 2.153
+  Voice: {fileID: 8300000, guid: 33808e182522045498e5e9656a74de79, type: 3}
+  TextFr: "Chaque battement est plus lourd que le pr\xE9c\xE9dent."
+  TextEn: Each beat is heavier than the last.

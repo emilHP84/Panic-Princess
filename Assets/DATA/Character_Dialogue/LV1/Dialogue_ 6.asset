@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663d53fe223c70844893ab6534649192, type: 3}
   m_Name: Dialogue_ 6
   m_EditorClassIdentifier: 
-  TimeCode: 0
-  PersoID: 0
-  Duration: 0
-  Voice: {fileID: 0}
-  TextFr: 
-  TextEn: 
+  StartTimeCode: 19
+  PersoID: 1
+  EndTimeCode: 2.139
+  Voice: {fileID: 8300000, guid: 3f3827d8c3c8d7b4fbcff7d0f1f2c8be, type: 3}
+  TextFr: Nous trouverons la rose, Je te le promets.
+  TextEn: We'll find the rose, I promise.
