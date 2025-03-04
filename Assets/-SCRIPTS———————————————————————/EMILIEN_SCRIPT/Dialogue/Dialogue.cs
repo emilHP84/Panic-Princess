@@ -6,9 +6,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName ="Dialogue_", menuName ="ScriptableObjects/Dialogues/Character Dialogue", order = 0)]
 public class Dialogue: ScriptableObject
 {
-    public int StartTimeCode;
+    public float StartTimeCode;
     public int PersoID;
-    public int EndTimeCode;
+    public float EndTimeCode;
     public AudioClip Voice;
 
     public string TextFr;
