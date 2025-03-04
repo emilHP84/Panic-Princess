@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartTimeCode: 13
   PersoID: 1
-  EndTimeCode: 2.535
+  Duration: 2.535
   Voice: {fileID: 8300000, guid: e1d09b0dd066db3459a1cf6df8b9d62e, type: 3}
   TextFr: JAMAIS! Tu es mon souffle, Elianna.
   TextEn: NEVER! You are my breath, Elianna.

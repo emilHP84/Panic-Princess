@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartTimeCode: 16
   PersoID: 1
-  EndTimeCode: 2.159
+  Duration: 2.159
   Voice: {fileID: 8300000, guid: 858d5906fcaf9e241839a804c6a87a82, type: 3}
   TextFr: "Sans toi, je ne suis qu\u2019une coquille vide."
   TextEn: Without you, I'm just an empty shell

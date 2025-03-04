@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartTimeCode: 4
   PersoID: 2
-  EndTimeCode: 2.153
+  Duration: 2.153
   Voice: {fileID: 8300000, guid: 33808e182522045498e5e9656a74de79, type: 3}
   TextFr: "Chaque battement est plus lourd que le pr\xE9c\xE9dent."
   TextEn: Each beat is heavier than the last.

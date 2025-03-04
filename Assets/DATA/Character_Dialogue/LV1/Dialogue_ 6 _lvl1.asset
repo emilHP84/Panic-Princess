@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartTimeCode: 19
   PersoID: 1
-  EndTimeCode: 2.139
+  Duration: 2.139
   Voice: {fileID: 8300000, guid: 3f3827d8c3c8d7b4fbcff7d0f1f2c8be, type: 3}
   TextFr: Nous trouverons la rose, Je te le promets.
   TextEn: We'll find the rose, I promise.
