@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 663d53fe223c70844893ab6534649192, type: 3}
-  m_Name: Dialogue_ 3 _lvl2
+  m_Name: Dialogue_ 2 _lvl3
   m_EditorClassIdentifier: 
-  StartTimeCode: 14
+  StartTimeCode: 10
   PersoID: 1
-  Duration: 4.021
-  Voice: {fileID: 8300000, guid: e7b0882c85b0188418004a80e4116338, type: 3}
-  TextFr: "Je m\u2019en souviens comme si c\u2019\xE9tait hier. Mais ces murmures
-    ne sont pas r\xE9els, Elianna."
-  TextEn: I remember it like it was yesterday. But these whispers aren't real, Elianna.
+  Duration: 5.137
+  Voice: {fileID: 8300000, guid: 800f076d2bf0f3b4d9a954d431c20b06, type: 3}
+  TextFr: Alors je porterai ce poids avec joie. Chaque battement que je t'offre,
+    est une preuve de mon amour.
+  TextEn: Then I'll carry this weight with joy. Every beat I offer you is proof of
+    my love.
