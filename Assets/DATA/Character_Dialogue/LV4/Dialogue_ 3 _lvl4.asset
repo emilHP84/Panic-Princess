@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 663d53fe223c70844893ab6534649192, type: 3}
+  m_Name: Dialogue_ 3 _lvl4
+  m_EditorClassIdentifier: 
+  StartTimeCode: 13
+  PersoID: 2
+  Duration: 6.81
+  Voice: {fileID: 8300000, guid: def67dc9e42022f48a6081537a0c2329, type: 3}
+  TextFr: "Tu es mon \xE9toile, Valentin , et mon existence ne brille qu\u2019\xE0
+    la lueur de ton amour \xE9ternel."
+  TextEn: You are my star, Valentin, and my existence shines only in the light of
+    your eternal love.

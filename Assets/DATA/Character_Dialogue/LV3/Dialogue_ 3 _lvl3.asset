@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 663d53fe223c70844893ab6534649192, type: 3}
-  m_Name: Dialogue_ 2 _lvl4
+  m_Name: Dialogue_ 3 _lvl3
   m_EditorClassIdentifier: 
-  StartTimeCode: 9
+  StartTimeCode: 15
   PersoID: 1
-  Duration: 4.631
-  Voice: {fileID: 8300000, guid: 0046b62e0910f654eafdb07c0af0cf14, type: 3}
-  TextFr: "Je t\u2019aime aussi. Pour toujours."
-  TextEn: I love you too. I love you forever.
+  Duration: 5.064
+  Voice: {fileID: 8300000, guid: 0831aae137065044c9c825e1ac76260e, type: 3}
+  TextFr: "Et si c\u2019est le dernier, il sera \xE0 toi."
+  TextEn: And if it's the last one, it's yours.
