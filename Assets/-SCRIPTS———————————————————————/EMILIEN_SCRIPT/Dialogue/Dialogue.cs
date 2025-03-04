@@ -8,7 +8,7 @@ public class Dialogue: ScriptableObject
 {
     public float StartTimeCode;
     public int PersoID;
-    public float EndTimeCode;
+    public float Duration;
     public AudioClip Voice;
 
     public string TextFr;

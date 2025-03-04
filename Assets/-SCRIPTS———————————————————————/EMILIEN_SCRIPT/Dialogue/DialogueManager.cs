@@ -122,7 +122,7 @@ public class DialogueManager : MonoBehaviour
             LaunchAudio();
             ShowText(LanguageManager.currentLang == SystemLanguage.French ? currentDialogue.TextFr : currentDialogue.TextEn);
             isDialoguePlaying = true;
-            Invoke("DialogueFinish", currentDialogue.EndTimeCode - currentDialogue.StartTimeCode);
+            Invoke("DialogueFinish", currentDialogue.Duration);
         }
         if (!isDialoguePlaying && isSilenceWaiting)
         {
