@@ -113,7 +113,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (GAME.MANAGER.CurrentState == State.menu) { return; }
+        if (GAME.MANAGER.CurrentState != State.gameplay) { return; }
 
         currentTime += Time.deltaTime;
         if (currentDialogue != null && currentTime >= currentDialogue.StartTimeCode && !isDialoguePlaying)

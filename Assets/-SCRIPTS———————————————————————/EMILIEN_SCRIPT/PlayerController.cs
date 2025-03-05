@@ -57,7 +57,7 @@ namespace Scripted
                 move.MovingOnValue(new Vector3(1,0,0));
             }
 
-            if (Input.GetKeyDown(KeyCode.Space)&& !isJumping)
+            if (Input.GetKeyDown(KeyCode.Space) && !isJumping)
             {
                 isJumping = true;
                 jumpStartTime = Time.time;
