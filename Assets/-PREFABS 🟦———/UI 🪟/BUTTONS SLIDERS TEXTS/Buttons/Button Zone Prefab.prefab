@@ -195,17 +195,17 @@ MonoBehaviour:
   hoverScale: 1.2
   scaleEasing: 7
   scaleDuration: 0.2
-  buttonHover:
-    clip: {fileID: 8300000, guid: ff9f9d8c59732f94d97b34ad443378a7, type: 3}
-    volume: 0.3
-    looping: 0
-  buttonExit:
-    clip: {fileID: 0}
-    volume: 1
-    looping: 0
+  buttonHover: []
+  buttonExit: []
   buttonClick:
-    clip: {fileID: 8300000, guid: c6f3fc4ee92a0854c9697a0c9850a0ec, type: 3}
-    volume: 1
+  - clip: {fileID: 8300000, guid: eff0a718fdd1afd4dbb8cb1daebaece9, type: 3}
+    volume: 0.5
+    looping: 0
+  - clip: {fileID: 8300000, guid: 26303112aa6fc374da6dda516f498f39, type: 3}
+    volume: 0.5
+    looping: 0
+  - clip: {fileID: 8300000, guid: 6040ed271f4113d4b8992ae4e78c6a5f, type: 3}
+    volume: 0.5
     looping: 0
   fxButtonClick: {fileID: 0}
   pulseEffect: 1
