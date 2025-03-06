@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4210961915673613873}
   - component: {fileID: 5847522160198370801}
   - component: {fileID: 4390655507831868421}
-  m_Layer: 6
+  m_Layer: 20
   m_Name: "\U0001F3A5CAM POSITION \U0001F4CD"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5799999447970292125}
   - component: {fileID: 9008934836780207400}
-  m_Layer: 6
+  m_Layer: 19
   m_Name: VerticalPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 735071498995722048}
   - component: {fileID: 2784491575392469667}
   - component: {fileID: 4292012437398432436}
-  m_Layer: 6
+  m_Layer: 19
   m_Name: THIS WILL SNAP THE CAMERA HERE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7318266065102211505}
   - component: {fileID: 1834322272756038835}
-  m_Layer: 6
+  m_Layer: 19
   m_Name: HorizontalPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

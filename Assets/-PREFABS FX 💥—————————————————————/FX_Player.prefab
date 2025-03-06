@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6283239707994473283}
   - component: {fileID: 4649147170307072028}
   m_Layer: 0
-  m_Name: Warrior 2
+  m_Name: hit 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,8 +43,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: ae3b47bc83653f84c85e7507e3956926,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 34f03a0522adaf84c81b8ef116a8122e, type: 3}
-  m_Resource: {fileID: 8300000, guid: 34f03a0522adaf84c81b8ef116a8122e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8708d6db03ebe8341adfd69fcece797f, type: 3}
+  m_Resource: {fileID: 8300000, guid: 8708d6db03ebe8341adfd69fcece797f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 5368737423778490549}
   - component: {fileID: 8675993013941804601}
   m_Layer: 0
-  m_Name: 'Warrior 1 '
+  m_Name: hit 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -173,8 +173,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: ae3b47bc83653f84c85e7507e3956926,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 648a7b05011015449b7d7f367f513d76, type: 3}
-  m_Resource: {fileID: 8300000, guid: 648a7b05011015449b7d7f367f513d76, type: 3}
+  m_audioClip: {fileID: 8300000, guid: be4e3d0a865db4b42a044001465943ab, type: 3}
+  m_Resource: {fileID: 8300000, guid: be4e3d0a865db4b42a044001465943ab, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 18476656471537584}
   - component: {fileID: 5086244557924744011}
   m_Layer: 0
-  m_Name: Warrior 3
+  m_Name: hit 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -303,8 +303,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: ae3b47bc83653f84c85e7507e3956926,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: d46bc1c38da9cd240a3e8ceeb26e6004, type: 3}
-  m_Resource: {fileID: 8300000, guid: d46bc1c38da9cd240a3e8ceeb26e6004, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 568b632970a9e414ba1c241dd9df2263, type: 3}
+  m_Resource: {fileID: 8300000, guid: 568b632970a9e414ba1c241dd9df2263, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 3957079603222224285}
   - component: {fileID: 6652994954808560604}
   m_Layer: 0
-  m_Name: FX_Warrior
+  m_Name: FX_Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

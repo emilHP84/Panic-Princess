@@ -20,9 +20,6 @@ public class FeedbackScript : MonoBehaviour
         StartCoroutine(WaitForDestruction());
     }
 
-
-
-
     IEnumerator WaitForDestruction()
     {
         destroyable = false;

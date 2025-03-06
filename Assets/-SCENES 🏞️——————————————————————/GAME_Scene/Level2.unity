@@ -272,6 +272,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\U0001F3A5CAM POSITION \U0001F4CD"
       objectReference: {fileID: 0}
+    - target: {fileID: 2529079400667858090, guid: 72f07ed203562254a9fada503b5a3104,
+        type: 3}
+      propertyPath: m_Layer
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4210961915673613873, guid: 72f07ed203562254a9fada503b5a3104,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -321,6 +326,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913169203578720301, guid: 72f07ed203562254a9fada503b5a3104,
+        type: 3}
+      propertyPath: m_Layer
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7170001613613978091, guid: 72f07ed203562254a9fada503b5a3104,
+        type: 3}
+      propertyPath: m_Layer
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856991593547552516, guid: 72f07ed203562254a9fada503b5a3104,
+        type: 3}
+      propertyPath: m_Layer
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -792,7 +812,7 @@ GameObject:
   - component: {fileID: 818894108}
   - component: {fileID: 818894107}
   - component: {fileID: 818894106}
-  m_Layer: 6
+  m_Layer: 20
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -975,6 +995,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4511059492635183215, guid: bc7fa45fa4a77df43b63a8c1d556c668,
+        type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 5b1706d6f35d31846bd2c2aede88a19b, type: 3}
+    - target: {fileID: 4511059492635183215, guid: bc7fa45fa4a77df43b63a8c1d556c668,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5b1706d6f35d31846bd2c2aede88a19b, type: 3}
     - target: {fileID: 5978006086356985776, guid: bc7fa45fa4a77df43b63a8c1d556c668,
         type: 3}
       propertyPath: jumpHeight

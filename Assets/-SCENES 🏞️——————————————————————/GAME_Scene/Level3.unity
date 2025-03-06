@@ -390,6 +390,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4511059492635183215, guid: bc7fa45fa4a77df43b63a8c1d556c668,
+        type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 56b343234f0be664694cf2deff226d20, type: 3}
+    - target: {fileID: 4511059492635183215, guid: bc7fa45fa4a77df43b63a8c1d556c668,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 56b343234f0be664694cf2deff226d20, type: 3}
     - target: {fileID: 6968657305031356186, guid: bc7fa45fa4a77df43b63a8c1d556c668,
         type: 3}
       propertyPath: camPos
@@ -751,7 +761,7 @@ PrefabInstance:
     - target: {fileID: 4210961915673613873, guid: 72f07ed203562254a9fada503b5a3104,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6
+      value: 1.73
       objectReference: {fileID: 0}
     - target: {fileID: 4210961915673613873, guid: 72f07ed203562254a9fada503b5a3104,
         type: 3}

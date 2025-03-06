@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 870447958024451276}
   - component: {fileID: 8399591848171576021}
   - component: {fileID: 6858169732538541748}
-  - component: {fileID: 3479679422851312834}
   m_Layer: 19
   m_Name: Entity Cailloux
   m_TagString: Untagged
@@ -50,6 +49,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FXPrefab: {fileID: 6089237566075303425, guid: 91f597294ecf561478f97120f2229d08,
     type: 3}
+  FXHited: {fileID: 6089237566075303425, guid: b2800406f758f7d479c40621c59707db, type: 3}
+  colidWith:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!65 &8399591848171576021
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60,10 +63,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1048511
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -98,19 +101,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3479679422851312834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6002277775866925401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a4588dd5063cb94ebcd08adfb2bdfbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playlist: {fileID: 11400000, guid: dff002d52f9b87b45aa71594d52c7769, type: 2}
 --- !u!1 &7162674273319685830
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,7 +143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6270318704813254981}
   - component: {fileID: 550099971924439887}
-  m_Layer: 19
+  m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
