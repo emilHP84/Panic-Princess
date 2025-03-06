@@ -16,7 +16,5 @@ MonoBehaviour:
   PersoID: 2
   Duration: 9.472
   Voice: {fileID: 8300000, guid: 711e9df95126f484fa2888bd7fc94d1d, type: 3}
-  TextFr: "Valentin , et si la Rose ne pouvait pas me sauver\u2026 et si elle ne
-    faisait qu\u2019ajouter un poids \xE0 ton c\u0153ur ?"
-  TextEn: Valentin , what if the Rose couldn't save me... what if it just added a
-    weight to your heart?
+  TextFr: " Non, Valentin\u2026 Je ne peux pas\u2026 Je\u2026 Je t\u2019aime."
+  TextEn: "No, Valentin\u2026 I can\u2019t\u2026 I\u2026 I love you."
