@@ -438,7 +438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenShake: 0
-  freezeMilliseconds: 20
+  freezeMilliseconds: 0
   freezeBeforeShake: 0
 --- !u!1 &7578891522599990498
 GameObject:
