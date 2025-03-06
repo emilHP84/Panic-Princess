@@ -392,10 +392,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3544620035611635356, guid: bc7fa45fa4a77df43b63a8c1d556c668,
         type: 3}
-      propertyPath: FX_Endjump
-      value: 
-      objectReference: {fileID: 6089237566075303425, guid: a291007f71e74ba4b9d27637ca501be8,
-        type: 3}
+      propertyPath: jumpDuration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4511059492635183215, guid: bc7fa45fa4a77df43b63a8c1d556c668,
         type: 3}
       propertyPath: m_Resource
@@ -406,6 +405,11 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 56b343234f0be664694cf2deff226d20, type: 3}
+    - target: {fileID: 5978006086356985776, guid: bc7fa45fa4a77df43b63a8c1d556c668,
+        type: 3}
+      propertyPath: jumpHeight
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6968657305031356186, guid: bc7fa45fa4a77df43b63a8c1d556c668,
         type: 3}
       propertyPath: camPos
