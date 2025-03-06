@@ -101,4 +101,7 @@ public class EVENTS
     public static event Action OnHited;
     public static void InvokeHited() { OnHited?.Invoke();}
 
+    public static event Action OnEnnemi;
+    public static void InvokeEnnemi() { OnEnnemi?.Invoke();}
+
 } // SCRIPT END
