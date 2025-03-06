@@ -7,9 +7,11 @@ public class Jump : MonoBehaviour
     [SerializeField] private AnimationCurve jumpCurve = new AnimationCurve();
     [SerializeField] private float jumpHeight = 2f;
 
-    public void StartJumping()
+    public void StartJumping(AudioSource source, GameObject jump, GameObject run)
     {
-
+        source.Stop();
+        jump.SetActive(true);
+        run.SetActive(false);
     }
 
     public void DuringJumping(float startJumpingTime, float jumpDuration)
@@ -24,8 +26,10 @@ public class Jump : MonoBehaviour
         transform.position = newPosition;
     }
 
-    public void EndJumping()
+    public void EndJumping(AudioSource source, GameObject obj, GameObject run)
     {
-
+        source.Play();
+        obj.SetActive(false);
+        run.SetActive(true);
     }
 }

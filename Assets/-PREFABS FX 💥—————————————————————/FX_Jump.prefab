@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6283239707994473283}
   - component: {fileID: 4649147170307072028}
   m_Layer: 0
-  m_Name: Plante 2
+  m_Name: jump 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,10 +43,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: ae3b47bc83653f84c85e7507e3956926,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: e107d7c40ed894e46bdc3275fa77a6c7, type: 3}
-  m_Resource: {fileID: 8300000, guid: e107d7c40ed894e46bdc3275fa77a6c7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 39cc6942384454d458d130f33ed31d8c, type: 3}
+  m_Resource: {fileID: 8300000, guid: 39cc6942384454d458d130f33ed31d8c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 5368737423778490549}
   - component: {fileID: 8675993013941804601}
   m_Layer: 0
-  m_Name: Plante 1
+  m_Name: jump 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -173,10 +173,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: ae3b47bc83653f84c85e7507e3956926,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: ae54b59084e03e248b7e8b251e33fb8d, type: 3}
-  m_Resource: {fileID: 8300000, guid: ae54b59084e03e248b7e8b251e33fb8d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ef2fe6013c130d9428330ed8606b540d, type: 3}
+  m_Resource: {fileID: 8300000, guid: ef2fe6013c130d9428330ed8606b540d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 18476656471537584}
   - component: {fileID: 5086244557924744011}
   m_Layer: 0
-  m_Name: Plante 3
+  m_Name: jump 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -303,10 +303,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: ae3b47bc83653f84c85e7507e3956926,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 2176d18c92bb6a84bbacfdf1e62dddba, type: 3}
-  m_Resource: {fileID: 8300000, guid: 2176d18c92bb6a84bbacfdf1e62dddba, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ef9562ff1a7c63142af7d77414d0d4c6, type: 3}
+  m_Resource: {fileID: 8300000, guid: ef9562ff1a7c63142af7d77414d0d4c6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 3957079603222224285}
   - component: {fileID: 6652994954808560604}
   m_Layer: 0
-  m_Name: FX_Plante
+  m_Name: FX_Jump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -438,7 +438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenShake: 0
-  freezeMilliseconds: 20
+  freezeMilliseconds: 0
   freezeBeforeShake: 0
 --- !u!1 &7578891522599990498
 GameObject:

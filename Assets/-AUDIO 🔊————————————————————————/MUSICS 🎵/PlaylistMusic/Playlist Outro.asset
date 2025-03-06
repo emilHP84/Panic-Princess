@@ -19,6 +19,6 @@ MonoBehaviour:
     fadeInDuration: 5
     fadeOutDuration: 1
     tracks:
-    - clipTitle: Ambiance + voix fin de jeu
-      clip: {fileID: 8300000, guid: 50300f17d35396e41a1fc62edd24393c, type: 3}
+    - clipTitle: MUSIC OUTRO
+      clip: {fileID: 8300000, guid: 80d5e3c2429ab9248a1e34f70cbd7d19, type: 3}
       volume: 0.5
