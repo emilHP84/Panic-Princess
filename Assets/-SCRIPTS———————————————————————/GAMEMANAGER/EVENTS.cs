@@ -104,4 +104,8 @@ public class EVENTS
     public static event Action OnEnnemi;
     public static void InvokeEnnemi() { OnEnnemi?.Invoke();}
 
+    public static event Action OnDeath;
+    public static void InvokeDeath() { OnDeath?.Invoke(); }
+
+
 } // SCRIPT END

@@ -1,4 +1,6 @@
+using DG.Tweening;
 using NUnit.Framework;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,12 +26,13 @@ namespace Scripted
         private void OnEnable()
         {
             EVENTS.OnJump += Jumping;
+            EVENTS.OnDeath += DeathAnim;
         }
 
         private void OnDisable()
         {
             EVENTS.OnJump -= Jumping;
-
+            EVENTS.OnDeath -= DeathAnim;
         }
 
         private void Start()
@@ -97,6 +100,20 @@ namespace Scripted
                 }
             }
         }
+
+        void DeathAnim()
+        {
+            StartCoroutine("EnumDeath");
+        }
+
+        private IEnumerator EnumDeath()
+        {
+            gameObject.GetComponent<BoxCollider>().enabled = false;
+            gameObject.transform.DOMoveY(3, 0.6f);
+            yield return new WaitForSeconds(0.6f);
+            gameObject.transform.DOMoveY(-10, 1f);
+        }
+
 
         void SetVFX(bool isActive)
         {
