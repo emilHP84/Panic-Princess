@@ -1355,6 +1355,21 @@ PrefabInstance:
       propertyPath: clickOnce
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4999631699898198112, guid: 3ee834a07d046ee4ebebee9a58cafa8f,
+        type: 3}
+      propertyPath: buttonClick.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4999631699898198112, guid: 3ee834a07d046ee4ebebee9a58cafa8f,
+        type: 3}
+      propertyPath: buttonClick.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c6f3fc4ee92a0854c9697a0c9850a0ec, type: 3}
+    - target: {fileID: 4999631699898198112, guid: 3ee834a07d046ee4ebebee9a58cafa8f,
+        type: 3}
+      propertyPath: buttonClick.Array.data[2].looping
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5653400515240392124, guid: 3ee834a07d046ee4ebebee9a58cafa8f,
         type: 3}
       propertyPath: m_Name

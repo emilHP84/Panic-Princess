@@ -17,7 +17,7 @@ public class ButtonScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     [Range(0.8f,2f)][SerializeField] float hoverScale = 1.2f;
     [SerializeField] Ease scaleEasing = Ease.InOutQuad;
     [Range(0f,1f)][SerializeField] float scaleDuration = 0.2f;
-    [SerializeField] AudioClipExtended buttonHover, buttonExit, buttonClick;
+    [SerializeField] AudioClipExtended[] buttonHover, buttonExit, buttonClick;
     [SerializeField]GameObject fxButtonClick;
     Transform _transform => transform;
     Button button => GetComponent<Button>();
@@ -37,7 +37,11 @@ public class ButtonScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     void SelectButtonEffect()
     {
         EVENTS.InvokeUIElementSelected(button);
-        if (buttonHover.clip) PlaySound(buttonHover.clip,buttonHover.volume);
+        if (buttonHover.Length > 0)
+        {
+            AudioClipExtended choosen = buttonHover[Random.Range(0, buttonHover.Length)];
+            if (choosen.clip) PlaySound(choosen.clip, choosen.volume);
+        }
         _transform.DOScale(hoverScale,scaleDuration).SetEase(scaleEasing).SetUpdate(true).OnComplete(SelectedPulseEffect);
     }
 
@@ -58,7 +62,11 @@ public class ButtonScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     void ClickButtonEffect()
     {
         clickEffect = true;
-        if (buttonClick.clip) PlaySound(buttonClick.clip,buttonClick.volume);
+        if (buttonClick.Length > 0)
+        {
+            AudioClipExtended choosen = buttonClick[Random.Range(0, buttonClick.Length)];
+            if (choosen.clip) PlaySound(choosen.clip, choosen.volume);
+        }
         if (fxButtonClick) Instantiate(fxButtonClick,transform.position, transform.rotation);
         Vector3 currentScale =  _transform.localScale;
         _transform.DOKill();
@@ -125,7 +133,12 @@ public class ButtonScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public void OnPointerExit(PointerEventData eventData)
     {
         if (button.interactable==false) return;
-        if (buttonExit.clip) PlaySound(buttonExit.clip,buttonExit.volume);
+        if(buttonExit.Length>0)
+        {
+            AudioClipExtended choosen = buttonExit[Random.Range(0, buttonExit.Length)];
+            if (choosen.clip) PlaySound(choosen.clip, choosen.volume);
+        }
+
         #if UNITY_EDITOR
         Debug.Log("✊Leave "+buttonName);
         #endif
