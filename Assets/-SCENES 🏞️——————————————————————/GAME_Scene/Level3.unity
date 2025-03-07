@@ -392,9 +392,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3544620035611635356, guid: bc7fa45fa4a77df43b63a8c1d556c668,
         type: 3}
-      propertyPath: jumpDuration
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: FX_Endjump
+      value: 
+      objectReference: {fileID: 6089237566075303425, guid: a291007f71e74ba4b9d27637ca501be8,
+        type: 3}
+    - target: {fileID: 3998638544322677666, guid: bc7fa45fa4a77df43b63a8c1d556c668,
+        type: 3}
+      propertyPath: 'sprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 583a7737821465946a03f417492a66a2,
+        type: 3}
+    - target: {fileID: 3998638544322677666, guid: bc7fa45fa4a77df43b63a8c1d556c668,
+        type: 3}
+      propertyPath: 'sprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2b4a427d55e33b644b39c599df82d1fc,
+        type: 3}
+    - target: {fileID: 3998638544322677666, guid: bc7fa45fa4a77df43b63a8c1d556c668,
+        type: 3}
+      propertyPath: 'sprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 5ef16ba53806a2e499b4dc622c9014c3,
+        type: 3}
     - target: {fileID: 4511059492635183215, guid: bc7fa45fa4a77df43b63a8c1d556c668,
         type: 3}
       propertyPath: m_Resource
@@ -405,11 +424,6 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 56b343234f0be664694cf2deff226d20, type: 3}
-    - target: {fileID: 5978006086356985776, guid: bc7fa45fa4a77df43b63a8c1d556c668,
-        type: 3}
-      propertyPath: jumpHeight
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 6968657305031356186, guid: bc7fa45fa4a77df43b63a8c1d556c668,
         type: 3}
       propertyPath: camPos
@@ -420,6 +434,12 @@ PrefabInstance:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7212439558868552864, guid: bc7fa45fa4a77df43b63a8c1d556c668,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 583a7737821465946a03f417492a66a2,
+        type: 3}
     - target: {fileID: 8108217902727911048, guid: bc7fa45fa4a77df43b63a8c1d556c668,
         type: 3}
       propertyPath: m_Name

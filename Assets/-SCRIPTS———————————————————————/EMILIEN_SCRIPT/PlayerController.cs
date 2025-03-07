@@ -73,8 +73,19 @@ namespace Scripted
                 move.MovingOnValue(new Vector3(1, 0, 0));
             }
 
-            if (Input.GetKeyDown(KeyCode.Space) && !isJumping)
+            if (!isJumping && Input.GetKeyDown(KeyCode.Space)  || !isJumping && Input.touchCount > 0)
             {
+                Touch touch = Input.GetTouch(0);
+                if(touch.phase == TouchPhase.Began)
+                {
+                    Instantiate(FX_jump, transform.position, Quaternion.identity, transform);
+
+                    isJumping = true;
+                    jumpStartTime = Time.time;
+                    jump.StartJumping(footStepSource, jumpAnim, runAnim);
+                    SetVFX(false);
+                }
+
                 Instantiate(FX_jump, transform.position, Quaternion.identity, transform);
 
                 isJumping = true;
@@ -116,16 +127,16 @@ namespace Scripted
 
 
         void SetVFX(bool isActive)
-        {
+        {  
             for (int i = 0; i >= vfxTrails.Count; i++)
             {
                 if (isActive == true)
                 {
-                    vfxTrails[i].Play();
+                    //vfxTrails[i].main.simulationSpeed = 0;
                 }
                 if (isActive == false)
                 {
-                    vfxTrails[i].Stop();
+                    //vfxTrails[i].main.simulationSpeed = 1;
                 }
             }
         }
