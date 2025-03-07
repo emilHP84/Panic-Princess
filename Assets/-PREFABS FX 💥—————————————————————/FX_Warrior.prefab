@@ -559,6 +559,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -176.096
       objectReference: {fileID: 0}
+    - target: {fileID: 2912153139766207045, guid: bc37e56aca5c16f45a42104b7ce2272a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488639804564915947, guid: bc37e56aca5c16f45a42104b7ce2272a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5612880982619171333, guid: bc37e56aca5c16f45a42104b7ce2272a,
         type: 3}
       propertyPath: looping
@@ -567,12 +577,17 @@ PrefabInstance:
     - target: {fileID: 5612880982619171333, guid: bc37e56aca5c16f45a42104b7ce2272a,
         type: 3}
       propertyPath: lengthInSec
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5612880982619171333, guid: bc37e56aca5c16f45a42104b7ce2272a,
         type: 3}
       propertyPath: playOnAwake
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612880982619171333, guid: bc37e56aca5c16f45a42104b7ce2272a,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8720982556111255839, guid: bc37e56aca5c16f45a42104b7ce2272a,
         type: 3}
