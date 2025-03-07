@@ -20,24 +20,31 @@ namespace Scripted
         [SerializeField] private GameObject jumpAnim;
 
         [SerializeField] private List<ParticleSystem> vfxTrails = new List<ParticleSystem>();
+        ParticleSystem.EmissionModule[] emissions;
         [SerializeField] private GameObject FX_jump;
         [SerializeField] private GameObject FX_Endjump;
 
         private void OnEnable()
         {
-            EVENTS.OnJump += Jumping;
+            // EVENTS.OnJump += Jumping;
             EVENTS.OnDeath += DeathAnim;
         }
 
         private void OnDisable()
         {
-            EVENTS.OnJump -= Jumping;
+            // EVENTS.OnJump -= Jumping;
             EVENTS.OnDeath -= DeathAnim;
         }
 
         private void Start()
         {
             AssignComponent();
+            emissions = new ParticleSystem.EmissionModule[vfxTrails.Count];
+            for (int i = 0; i < emissions.Length; i++)
+            {
+                emissions[i] = vfxTrails[i].emission;
+            }
+            Debug.Log("emission " + emissions[0].rateOverTime.constant);
         }
 
         private void AssignComponent()
@@ -46,14 +53,21 @@ namespace Scripted
             jump = GetComponent<Jump>();
         }
 
-        private void Jumping()
+        private void StartJump()
         {
-            if (!isJumping)
-            {
-                isJumping = true;
-                jumpStartTime = Time.time;
-                jump.StartJumping(footStepSource, jumpAnim, runAnim);
-            }
+            if (FX_jump) Instantiate(FX_jump, transform.position, Quaternion.identity, transform);
+            isJumping = true;
+            jumpStartTime = Time.time;
+            jump.StartJumping(footStepSource, jumpAnim, runAnim);
+            SetVFX(false); 
+        }
+
+        private void EndJump()
+        {
+            isJumping = false;
+            if (FX_Endjump) Instantiate(FX_Endjump, transform.position, Quaternion.identity, transform);
+            jump.EndJumping(footStepSource, jumpAnim, runAnim);
+            SetVFX(true);
         }
 
         private void Update()
@@ -75,12 +89,7 @@ namespace Scripted
 
             if (!isJumping && Input.GetKeyDown(KeyCode.Space))
             {
-                Instantiate(FX_jump, transform.position, Quaternion.identity, transform);
-
-                isJumping = true;
-                jumpStartTime = Time.time;
-                jump.StartJumping(footStepSource, jumpAnim, runAnim);
-                SetVFX(false);
+                StartJump();
             }
 
             if (!isJumping && Input.touchCount > 0)
@@ -88,12 +97,7 @@ namespace Scripted
                 Touch touch = Input.GetTouch(0);
                 if (touch.phase == TouchPhase.Began)
                 {
-                    Instantiate(FX_jump, transform.position, Quaternion.identity, transform);
-
-                    isJumping = true;
-                    jumpStartTime = Time.time;
-                    jump.StartJumping(footStepSource, jumpAnim, runAnim);
-                    SetVFX(false);
+                    StartJump();
                 }
             }
 
@@ -107,10 +111,7 @@ namespace Scripted
                 }
                 else
                 {
-                    isJumping = false;
-                    Instantiate(FX_Endjump, transform.position, Quaternion.identity, transform);
-                    jump.EndJumping(footStepSource, jumpAnim, runAnim);
-                    SetVFX(true);
+                    EndJump();
                 }
             }
         }
@@ -131,16 +132,9 @@ namespace Scripted
 
         void SetVFX(bool isActive)
         {  
-            for (int i = 0; i >= vfxTrails.Count; i++)
+            for (int i = 0; i >= emissions.Length; i++)
             {
-                if (isActive == true)
-                {
-                    //vfxTrails[i].main.simulationSpeed = 0;
-                }
-                if (isActive == false)
-                {
-                    //vfxTrails[i].main.simulationSpeed = 1;
-                }
+                emissions[i].rateOverTime = isActive ? 5f : 0f;
             }
         }
     }
