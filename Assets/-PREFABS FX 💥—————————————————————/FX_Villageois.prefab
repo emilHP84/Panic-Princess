@@ -46,7 +46,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 2ad32e0ee25caf944ac07f843c05157d, type: 3}
   m_Resource: {fileID: 8300000, guid: 2ad32e0ee25caf944ac07f843c05157d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -160,7 +160,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3957079603222224285}
+  m_Father: {fileID: 8854769921451576707}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &8675993013941804601
 AudioSource:
@@ -176,7 +176,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 0438ea6dbbc4fb94c84c4ec5d6407b94, type: 3}
   m_Resource: {fileID: 8300000, guid: 0438ea6dbbc4fb94c84c4ec5d6407b94, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -306,7 +306,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 127bdbe597bdab142b432a6e7f2a4d2f, type: 3}
   m_Resource: {fileID: 8300000, guid: 127bdbe597bdab142b432a6e7f2a4d2f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -423,7 +423,6 @@ Transform:
   - {fileID: 2662661465595100948}
   - {fileID: 2170442918454428705}
   - {fileID: 8854769921451576707}
-  - {fileID: 5368737423778490549}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6652994954808560604
@@ -601,6 +600,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 5368737423778490549}
   - {fileID: 6283239707994473283}
   - {fileID: 18476656471537584}
   m_Father: {fileID: 3957079603222224285}
