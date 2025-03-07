@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 706bfd3c78a85e945a29a435107852ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FXPrefab: {fileID: 6089237566075303425, guid: 02ce2c705b91d2d4098d363c3cddb6a7,
+  FXPrefab: {fileID: 6089237566075303425, guid: 6d470ff2781298f4a9a73a2854ed7fb3,
     type: 3}
   FXHited: {fileID: 6089237566075303425, guid: b2800406f758f7d479c40621c59707db, type: 3}
   colidWith:

@@ -73,10 +73,20 @@ namespace Scripted
                 move.MovingOnValue(new Vector3(1, 0, 0));
             }
 
-            if (!isJumping && Input.GetKeyDown(KeyCode.Space)  || !isJumping && Input.touchCount > 0)
+            if (!isJumping && Input.GetKeyDown(KeyCode.Space))
+            {
+                Instantiate(FX_jump, transform.position, Quaternion.identity, transform);
+
+                isJumping = true;
+                jumpStartTime = Time.time;
+                jump.StartJumping(footStepSource, jumpAnim, runAnim);
+                SetVFX(false);
+            }
+
+            if (!isJumping && Input.touchCount > 0)
             {
                 Touch touch = Input.GetTouch(0);
-                if(touch.phase == TouchPhase.Began)
+                if (touch.phase == TouchPhase.Began)
                 {
                     Instantiate(FX_jump, transform.position, Quaternion.identity, transform);
 
@@ -85,13 +95,6 @@ namespace Scripted
                     jump.StartJumping(footStepSource, jumpAnim, runAnim);
                     SetVFX(false);
                 }
-
-                Instantiate(FX_jump, transform.position, Quaternion.identity, transform);
-
-                isJumping = true;
-                jumpStartTime = Time.time;
-                jump.StartJumping(footStepSource, jumpAnim, runAnim);
-                SetVFX(false);
             }
 
             Vector3 newPosition = transform.position;
